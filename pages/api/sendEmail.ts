@@ -5,9 +5,9 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
 
-    const { name, email, phone, subject, message } = req.body;
+  const { name, email, phone, subject, message } = req.body;
 
-    const emailContent = `
+  const emailContent = `
       <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4;">
             <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
               <div style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); overflow: hidden;">
@@ -71,18 +71,16 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           </body>
     `;
 
-    const { data, error } = await resend.emails.send({
-        from: `Nueva consulta <onboarding@resend.dev>`,
-        to: ['adria.ordis@gmail.com'],
-        subject: `Nueva consulta: ${subject}`,
-        html: emailContent,
-    });
+  const { data, error } = await resend.emails.send({
+    from: `Nueva consulta <onboarding@resend.dev>`,
+    to: ['adria.ordis@gmail.com'],
+    subject: `Nueva consulta: ${subject}`,
+    html: emailContent,
+  });
 
-    console.log(data);
+  if (error) {
+    return res.status(400).json(error);
+  }
 
-    if (error) {
-        return res.status(400).json(error);
-    }
-
-    res.status(200).json(data);
+  res.status(200).json(data);
 };
