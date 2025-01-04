@@ -1,0 +1,78 @@
+'use client';
+
+import { Menu } from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
+import { usePathname } from 'next/navigation'
+
+export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: '/nosotros', label: 'NOSOTROS' },
+    { href: '/servicios', label: 'SERVICIOS' },
+    { href: '/blog', label: 'BLOG' },
+    { href: '/contacto', label: 'CONTACTO' },
+  ];
+
+  const pathname = usePathname();
+
+  return (
+    <nav className="bg-white shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-20 items-center">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/" className="flex items-center">
+              <img src="/logo.png" alt="Logo" className="h-20 w-20" />
+              <span className="text-2xl font-bold text-gray-900 ml-2">ABOGADOS</span>
+            </Link>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-12">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-gray-700 hover:text-gray-900 px-3 py-2 font-medium tracking-wider transition-colors 
+                  ${pathname === link.href ? 'text-yellow-500' : ''}`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              type="button"
+              className="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4">
+            <div className="flex flex-col space-y-2">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-base font-medium tracking-wider"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+}
