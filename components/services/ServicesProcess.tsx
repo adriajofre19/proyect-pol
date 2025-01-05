@@ -18,7 +18,7 @@ export function ServicesProcess() {
     {
       number: '04',
       title: 'Resolución',
-      description: 'Búsqueda de la mejor solución para sus intereses.'
+      description: 'Búsqueda de la mejor solución para sus intereses personales.'
     }
   ];
 
