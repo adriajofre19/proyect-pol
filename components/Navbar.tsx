@@ -20,23 +20,22 @@ export function Navbar() {
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
+        <div className="flex justify-between h-28 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Logo" className="h-20 w-20" />
-              <span className="text-2xl font-bold text-gray-900 ml-2">ABOGADOS</span>
+              <img src="/AM.png" alt="Logo" className="h-40 w-auto" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center flex-1 space-x-12">
+          <div className="hidden md:flex items-center justify-center flex-1 space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-gray-700 hover:text-gray-900 px-3 py-2 font-medium tracking-wider transition-colors 
-                  ${pathname === link.href ? 'text-yellow-500' : ''}`}
+                className={`hover:text-yellow-400 px-3 py-2 transition-colors 
+                  ${pathname === link.href ? 'text-yellow-500' : 'text-black'}`}
               >
                 {link.label}
               </Link>

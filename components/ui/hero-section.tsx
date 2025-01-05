@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <div className="relative bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+    <div className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white opacity-0 transition-opacity duration-1000 ease-in-out" style={{ opacity: 1 }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
           <Scale className="h-16 w-16 mx-auto mb-6 text-yellow-500" />
