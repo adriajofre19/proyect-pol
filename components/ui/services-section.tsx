@@ -12,7 +12,7 @@ export function ServicesSection() {
     {
       icon: Briefcase,
       title: 'Derecho Laboral',
-      description: 'Despidos, reclamaciones salariales y conflictos laborales.',
+      description: 'Despidos, sanciones ,reclamaciones salariales y conflictos laborales.',
     },
     {
       icon: FileText,
@@ -22,7 +22,7 @@ export function ServicesSection() {
     {
       icon: Users,
       title: 'Derecho Penal',
-      description: 'Defensa penal, delitos económicos y compliance.',
+      description: 'Defensa en procedimientos penales, acusación particular,  delitos económicos y compliance',
     },
     {
       icon: Home,
@@ -31,8 +31,8 @@ export function ServicesSection() {
     },
     {
       icon: Coins,
-      title: 'Derecho Bancario',
-      description: 'Reclamaciones bancarias, cláusulas abusivas y productos financieros.',
+      title: 'Derecho de la Competencia y Consumo',
+      description: 'Derechos de consumidores, cláusulas abusivas y productos financieros.',
     },
   ];
 

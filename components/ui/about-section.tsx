@@ -14,26 +14,23 @@ export function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Sobre Mí
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Con más de 15 años de experiencia en el campo legal, me he dedicado a
-              proporcionar asesoramiento jurídico de calidad a mis clientes. Mi
-              compromiso es ofrecer soluciones efectivas y personalizadas para cada
-              caso.
+            <p className="text-md text-gray-600 mb-6">
+
+              Cuento con varios años de experiencia en el campo legal, y en mi desempeño
+              profesional rige el compromiso en ofrecer asesoramiento jurídico de calidad,
+              basado en la excelencia y el rigor profesional.
+
             </p>
-            <ul className="space-y-4 text-gray-600">
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>
-                Licenciado en Derecho por la Universidad de [Universidad]
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>
-                Máster en Derecho Mercantil y Empresarial
-              </li>
-              <li className="flex items-center">
-                <span className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></span>
-                Miembro del Ilustre Colegio de Abogados
-              </li>
-            </ul>
+            <p className="text-md text-gray-600 mb-6">
+              Mi enfoque se centra en analizar cada caso de manera pormenorizado, diseñando
+              estrategias personalizadas y orientadas en obtener los mejores resultados para
+              mis clientes. Con una visión moderna y estratégica, trabajo codo a codo con mis
+              clientes para entender sus necesidades y brindarles la mejor solución legal posible.
+            </p>
+            <p className="text-md text-gray-600 mb-6">
+              Mi compromiso es firme: brindarte el apoyo legal que requieres con un enfoque práctico,
+              efectivo y altamente cualificado.
+            </p>
           </div>
         </div>
       </div>

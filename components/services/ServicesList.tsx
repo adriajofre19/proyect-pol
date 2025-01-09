@@ -1,10 +1,10 @@
-import { 
-  Building2, 
-  Scale, 
-  Briefcase, 
-  Home, 
-  Users, 
-  FileText 
+import {
+  Building2,
+  Scale,
+  Briefcase,
+  Home,
+  Users,
+  FileText
 } from 'lucide-react';
 
 export function ServicesList() {

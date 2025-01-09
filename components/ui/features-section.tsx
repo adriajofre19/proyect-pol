@@ -1,26 +1,26 @@
-import { BookOpen, Shield, Users, Clock } from 'lucide-react';
+import { Handshake, HandHeart, Users, Sparkles } from 'lucide-react';
 
 export function FeaturesSection() {
   const features = [
     {
-      icon: Shield,
-      title: 'Experiencia Comprobada',
-      description: 'Años de experiencia exitosa defendiendo los derechos de nuestros clientes.',
+      icon: Sparkles,
+      title: 'Compromiso con la Excelencia',
+      description: 'Trabajamos con dedicación para defender tus derechos y ofrecerte soluciones legales efectivas.',
     },
     {
       icon: Users,
-      title: 'Atención Personalizada',
-      description: 'Cada caso recibe atención individual y estrategias adaptadas a sus necesidades específicas.',
+      title: 'Enfoque Innovador en el Derecho',
+      description: 'Abordamos cada caso con un enfoque moderno y adaptado a las necesidades de nuestros clientes.',
     },
     {
-      icon: BookOpen,
-      title: 'Especialización',
-      description: 'Conocimiento profundo en diversas áreas del derecho para mejor servirle.',
+      icon: HandHeart,
+      title: 'Dedicación a Cada Caso',
+      description: 'Un abogado comprometido con entender tus necesidades y ofrecerte el mejor asesoramiento legal.',
     },
     {
-      icon: Clock,
-      title: 'Disponibilidad',
-      description: 'Respuesta rápida y seguimiento constante de su caso.',
+      icon: Handshake,
+      title: 'Tu Confianza, Nuestro Compromiso',
+      description: 'Nos esforzamos por construir relaciones basadas en la confianza y el trato personalizado.',
     },
   ];
 
