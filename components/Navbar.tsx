@@ -9,6 +9,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
+    { href: '/', label: 'INICIO' },
     { href: '/nosotros', label: 'NOSOTROS' },
     { href: '/servicios', label: 'SERVICIOS' },
     { href: '/blog', label: 'BLOG' },
@@ -20,11 +21,11 @@ export function Navbar() {
   return (
     <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-28 items-center">
+        <div className="flex justify-between h-24 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Logo" className="h-40 w-auto" />
+              <img src="/logo.png" alt="Logo" className="h-36 w-auto" />
             </Link>
           </div>
 

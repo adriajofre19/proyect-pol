@@ -15,33 +15,20 @@ export function Footer() {
               Asesoramiento legal profesional y personalizado para proteger sus derechos.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/nosotros" className="text-gray-400 hover:text-white transition-colors">
-                  Sobre Nosotros
+                <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+                  Politica de cookies
                 </Link>
+
               </li>
-              <li>
-                <Link href="/servicios" className="text-gray-400 hover:text-white transition-colors">
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/contacto" className="text-gray-400 hover:text-white transition-colors">
-                  Contacto
-                </Link>
-              </li>
+
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2">
@@ -51,7 +38,7 @@ export function Footer() {
               <li className="text-gray-400">Derecho Penal</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-gray-400">
@@ -62,7 +49,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} Su Abogado. Todos los derechos reservados.</p>
         </div>
