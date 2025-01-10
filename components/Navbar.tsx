@@ -19,13 +19,14 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Logo" className="h-36 w-auto" />
+              <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
+              <p className="text-2xl font-bold text-yellow-500">ABOGADOS</p>
             </Link>
           </div>
 
