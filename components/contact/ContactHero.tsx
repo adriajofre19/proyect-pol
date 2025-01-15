@@ -9,12 +9,12 @@ export function ContactHero() {
         />
         <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
       </div>
-      
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex flex-col justify-center h-full text-center">
           <h1 className="text-4xl font-bold text-white mb-4">Contacto</h1>
           <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-            Estamos aquí para ayudarte. Contáctanos para una consulta gratuita y descubre cómo podemos defender tus derechos.
+            Estamos aquí para ayudarle. Contacte para una consulta gratuita y descubra cómo podemos defender sus derechos.
           </p>
         </div>
       </div>

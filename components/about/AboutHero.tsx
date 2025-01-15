@@ -1,24 +1,23 @@
 export function AboutHero() {
     return (
-        <section className="relative bg-white py-20">
+        <section className="relative bg-[#FFFBF4] py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                            Experiencia y Compromiso en Derecho
+                            Compromiso y resultado
                         </h1>
                         <p className="text-lg text-gray-600 mb-8">
-                            Con más de 15 años de experiencia, nuestro despacho se ha convertido en un referente
-                            en el sector legal. Nos especializamos en diversas áreas del derecho, ofreciendo
-                            soluciones personalizadas y efectivas para nuestros clientes.
+                            Con varios años de experiencia, Arenas Mora Abogados está especializada en diversas áreas del derecho,
+                            ofreciendo soluciones personalizadas y efectivas en aras de preservar los intereses de sus clientes.
                         </p>
                         <div className="grid grid-cols-3 gap-8">
                             <div>
-                                <h3 className="text-3xl font-bold text-yellow-600">15+</h3>
-                                <p className="text-gray-600">Años de experiencia</p>
+                                <h3 className="text-3xl font-bold text-yellow-600">6+</h3>
+                                <p className="text-gray-600">Áreas del Derecho</p>
                             </div>
                             <div>
-                                <h3 className="text-3xl font-bold text-yellow-600">500+</h3>
+                                <h3 className="text-3xl font-bold text-yellow-600">175+</h3>
                                 <p className="text-gray-600">Casos exitosos</p>
                             </div>
                             <div>

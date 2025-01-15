@@ -37,7 +37,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-white">
+    <section id="servicios" className="py-20 bg-[#FFFBF4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -51,7 +51,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow"
+              className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow bg-white"
             >
               <service.icon className="h-12 w-12 text-yellow-500 mb-4" />
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>

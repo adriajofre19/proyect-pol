@@ -2,14 +2,14 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export function LocationSection() {
   return (
-    <section id="ubicacion" className="py-20 bg-white">
+    <section id="ubicacion" className="py-20 bg-[#FFFBF4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Ubicación del Despacho
           </h2>
           <p className="text-xl text-gray-600">
-            Encuentre nuestro bufete en el centro de la ciudad
+            Encuentre nuestro bufete en l'Esquerra de l'Eixample
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -22,8 +22,8 @@ export function LocationSection() {
                 <div>
                   <h3 className="font-medium text-gray-900">Dirección</h3>
                   <p className="text-gray-600">
-                    Calle Principal 123<br />
-                    28001 Madrid, España
+                    Carrer de París, 45-47 Entresuelo 3ª<br />
+                    08029 Eixample, Barcelona
                   </p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ export function LocationSection() {
                 <Phone className="h-6 w-6 text-yellow-600 mt-1 mr-4" />
                 <div>
                   <h3 className="font-medium text-gray-900">Teléfono</h3>
-                  <p className="text-gray-600">+34 600 000 000</p>
+                  <p className="text-gray-600">+34 657 188 297</p>
                 </div>
               </div>
 
@@ -40,7 +40,7 @@ export function LocationSection() {
                 <Mail className="h-6 w-6 text-yellow-600 mt-1 mr-4" />
                 <div>
                   <h3 className="font-medium text-gray-900">Email</h3>
-                  <p className="text-gray-600">contacto@suabogado.com</p>
+                  <p className="text-gray-600">polarenas@icab.cat</p>
                 </div>
               </div>
 
@@ -50,7 +50,7 @@ export function LocationSection() {
                   <h3 className="font-medium text-gray-900">Horario</h3>
                   <p className="text-gray-600">
                     Lunes a Viernes: 9:00 - 18:00<br />
-                    Sábados: Con cita previa
+
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@ export function LocationSection() {
           </div>
           <div className="h-[400px] rounded-lg overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6607123086384!2d-3.7037883846451627!3d40.41694077936441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2s!4v1645890374264!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187.08846182914394!2d2.143832104830555!3d41.38678456171628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49878c816ccf5%3A0xcf59a1c79262dfaf!2sCarrer%20de%20Par%C3%ADs%2C%2045-47%2C%20Entresuelo%203%C2%BA%2C%20Eixample%2C%2008029%20Barcelona!5e0!3m2!1ses!2ses!4v1736936376681!5m2!1ses!2ses"
               width="100%"
               height="100%"
               style={{ border: 0 }}

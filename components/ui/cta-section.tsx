@@ -10,13 +10,13 @@ export function CTASection() {
         </p>
         <div className="space-x-4">
           <a
-            href="tel:+34600000000"
+            href="tel:+34657188297"
             className="inline-block bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
           >
             Llamar Ahora
           </a>
           <a
-            href="mailto:contacto@suabogado.com"
+            href="mailto:polarenas@icab.cat"
             className="inline-block bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors"
           >
             Enviar Email

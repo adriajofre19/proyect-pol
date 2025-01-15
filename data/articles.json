@@ -1,0 +1,70 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "title": "Novedades en la Ley de Arrendamientos Urbanos",
+            "excerpt": "Análisis de las últimas modificaciones legislativas en materia de alquiler...",
+            "content": "Las recientes modificaciones en la Ley de Arrendamientos Urbanos han introducido cambios significativos que afectan tanto a propietarios como a inquilinos. Entre las principales novedades destacan:\n\n1. Duración de los contratos\n- Extensión de la prórroga obligatoria a 5 años\n- Prórroga tácita de 3 años\n- Nuevos plazos de preaviso\n\n2. Limitaciones a las garantías\n- Máximo de dos meses de fianza\n- Regulación de garantías adicionales\n- Protección del inquilino\n\n3. Gastos de gestión inmobiliaria\n- Nueva distribución de los gastos\n- Responsabilidades de cada parte\n- Transparencia en los costes\n\nEstos cambios buscan proporcionar mayor estabilidad y seguridad jurídica en el mercado del alquiler...",
+            "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+            "category": "Inmobiliario",
+            "date": "2024-03-15",
+            "readTime": "5 min",
+            "author": "Ana García"
+        },
+        {
+            "id": "7",
+            "title": "Delitos Informáticos: Cómo Proteger tu Empresa",
+            "excerpt": "Conoce los principales delitos informáticos y cómo evitarlos en tu negocio...",
+            "content": "El auge de la tecnología ha incrementado los riesgos asociados a los delitos informáticos. Entre los más comunes encontramos:\n\n1. Phishing\n- Técnicas más utilizadas\n- Cómo identificar correos fraudulentos\n- Consejos para evitar ser víctima\n\n2. Ransomware\n- Impacto en pequeñas empresas\n- Pasos para proteger datos sensibles\n\n3. Normativa penal aplicable\n- Delitos tipificados en el Código Penal\n- Responsabilidad empresarial\n\nAdoptar medidas de ciberseguridad es clave para prevenir este tipo de delitos y proteger la información sensible de tu empresa...",
+            "image": "https://images.unsplash.com/photo-1556155092-8707de31f9c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+            "category": "Penal",
+            "date": "2024-03-20",
+            "readTime": "6 min",
+            "author": "Lucía Fernández"
+        },
+        {
+            "id": "8",
+            "title": "Herencias y Sucesiones: Aspectos Clave",
+            "excerpt": "Todo lo que necesitas saber sobre herencias y sus implicaciones legales...",
+            "content": "Gestionar una herencia puede ser un proceso complicado si no se conoce la normativa aplicable. Algunos aspectos clave incluyen:\n\n1. Tipos de sucesión\n- Testada y abintestato\n- Requisitos legales\n\n2. Impuestos y obligaciones fiscales\n- Impuesto de Sucesiones\n- Plazos para la liquidación\n\n3. Reparto de bienes\n- Derechos de los herederos\n- Resolución de conflictos\n\nContar con asesoramiento especializado es fundamental para garantizar un reparto justo y evitar problemas legales...",
+            "image": "https://vamoscontufuturo.ibercaja.es/resources/articulos/1730125444-1730125442922.jpg",
+            "category": "Civil",
+            "date": "2024-03-18",
+            "readTime": "5 min",
+            "author": "Pablo Ruiz"
+        },
+        {
+            "id": "9",
+            "title": "Gestión de Insolvencias Empresariales",
+            "excerpt": "Herramientas legales para afrontar la insolvencia y proteger tu negocio...",
+            "content": "Cuando una empresa enfrenta dificultades financieras, es importante conocer las alternativas legales disponibles:\n\n1. Acuerdo extrajudicial de pagos\n- Ventajas y procedimientos\n- Rol del mediador concursal\n\n2. Concurso de acreedores\n- Fases del proceso\n- Plan de liquidación\n\n3. Prevención de insolvencias\n- Reestructuración temprana\n- Identificación de riesgos financieros\n\nAdoptar medidas proactivas puede ayudar a mitigar el impacto de una crisis financiera y preservar la viabilidad del negocio...",
+            "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+            "category": "Mercantil",
+            "date": "2024-03-12",
+            "readTime": "7 min",
+            "author": "Claudia Torres"
+        },
+        {
+            "id": "10",
+            "title": "Custodia y Patria Potestad: Diferencias Legales",
+            "excerpt": "Entiende las diferencias entre custodia y patria potestad en el derecho de familia...",
+            "content": "A menudo se confunden los conceptos de custodia y patria potestad. Sin embargo, tienen implicaciones legales distintas:\n\n1. Custodia\n- Definición y modalidades\n- Factores que determinan su asignación\n\n2. Patria potestad\n- Derechos y deberes inherentes\n- Situaciones en las que se puede limitar\n\n3. Resolución de conflictos\n- Mediación familiar\n- Papel de los tribunales\n\nEs esencial comprender estas diferencias para proteger los derechos tanto de los padres como de los hijos...",
+            "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+            "category": "Familia",
+            "date": "2024-03-14",
+            "readTime": "6 min",
+            "author": "Roberto Ortega"
+        },
+        {
+            "id": "11",
+            "title": "Prevención de Riesgos Laborales: Claves para Cumplir la Ley",
+            "excerpt": "Descubre las obligaciones legales en materia de prevención de riesgos laborales...",
+            "content": "Garantizar la seguridad en el trabajo no solo es una obligación legal, sino una responsabilidad social. Algunos puntos clave son:\n\n1. Evaluación de riesgos\n- Identificación de peligros\n- Planes de acción\n\n2. Formación obligatoria\n- Cursos para empleados\n- Responsabilidades del empleador\n\n3. Normativa aplicable\n- Ley de Prevención de Riesgos Laborales\n- Sanciones por incumplimiento\n\nImplementar un plan de prevención efectivo puede reducir accidentes y mejorar el bienestar de los trabajadores...",
+            "image": "https://www.ucavila.es/wp-content/uploads/2021/04/MicrosoftTeams-image-6.jpg",
+            "category": "Laboral",
+            "date": "2024-03-16",
+            "readTime": "7 min",
+            "author": "Andrea López"
+        }
+    ]
+}

@@ -5,12 +5,13 @@ import Link from 'next/link';
 
 export function HeroSection() {
   return (
-    <div className="relative bg-gradient-to-r from-gray-700 to-gray-900 text-white opacity-0 transition-opacity duration-1000 ease-in-out" style={{ opacity: 1 }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+    <div className="relative text-white opacity-80 transition-opacity duration-1000 ease-in-out bg-black opacity" style={{ opacity: 1, backgroundImage: 'url(/slider.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="w-full bg-black/75 mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
-          <Scale className="h-16 w-16 mx-auto mb-6 text-yellow-500" />
+
+          <img src='/ley.png' alt="Logo" className="h-16 w-auto mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Pol Arenas Mora
+            Arenas i Mora Abogados
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
             Defendiendo sus derechos con experiencia, dedicación y profesionalidad

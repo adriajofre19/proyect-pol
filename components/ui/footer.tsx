@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Scale className="h-8 w-8 text-yellow-500 mr-2" />
-              <span className="text-xl font-bold">Su Abogado</span>
+              <img src="/ley.png" alt="Logo" className="h-8 w-8 mr-2" />
+              <span className="text-xl font-bold">Arenas Mora Abogados</span>
             </div>
             <p className="text-gray-400">
               Asesoramiento legal profesional y personalizado para proteger sus derechos.
@@ -23,7 +23,16 @@ export function Footer() {
                 <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">
                   Politica de cookies
                 </Link>
-
+              </li>
+              <li>
+                <Link href="/aviso-legal" className="text-gray-400 hover:text-white transition-colors">
+                  Aviso legal
+                </Link>
+              </li>
+              <li>
+                <Link href="/politica-privacidad" className="text-gray-400 hover:text-white transition-colors">
+                  Politica de privacidad
+                </Link>
               </li>
 
             </ul>
@@ -42,16 +51,16 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Calle Principal 123</li>
-              <li>28001 Madrid, España</li>
-              <li>+34 600 000 000</li>
-              <li>contacto@suabogado.com</li>
+              <li>Carrer de París, 45-47</li>
+              <li>08029 Eixample, Barcelona</li>
+              <li>+34 657 188 297</li>
+              <li>polarenas@icab.cat</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Su Abogado. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Arenas Mora Abogados. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

@@ -13,20 +13,18 @@ export function Navbar() {
     { href: '/nosotros', label: 'NOSOTROS' },
     { href: '/servicios', label: 'SERVICIOS' },
     { href: '/blog', label: 'BLOG' },
-    { href: '/contacto', label: 'CONTACTO' },
   ];
 
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-[#f4ece0] shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-24 items-center">
+        <div className="flex justify-between h-32 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
-              <p className="text-2xl font-bold text-yellow-500">ABOGADOS</p>
+              <img src="/logo.png" alt="Logo" className="h-32 w-auto" />
             </Link>
           </div>
 
@@ -42,6 +40,11 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+          </div>
+          <div className='hidden md:flex'>
+            <Link href={'/contacto'} className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors">
+              CONTACTA CON NOSOTROS
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -70,6 +73,12 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+
+              <Link href={'/contacto'}
+                className="text-gray-700 bg-yellow-500 text-center rounded-lg hover:text-gray-900 px-3 py-2 text-base font-medium tracking-wider"
+                onClick={() => setIsMenuOpen(false)}>
+                CONTACTA CON NOSOTROS
+              </Link>
             </div>
           </div>
         )}

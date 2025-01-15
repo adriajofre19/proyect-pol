@@ -7,7 +7,7 @@ import { ContactHero } from '@/components/contact/ContactHero';
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-[#FFFBF4]">
       <ContactHero />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
