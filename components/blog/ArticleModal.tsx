@@ -2,7 +2,7 @@
 
 import { X } from 'lucide-react'
 import { formatDate } from "@/lib/utils"
-import type { Article } from "./BlogGrid"
+import { Article } from '@/types/blog';
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
