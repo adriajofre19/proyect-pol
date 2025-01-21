@@ -11,7 +11,7 @@ export default function CookiesPage() {
                             Titular: Pol Arenas Mora <br />
                             NIF: [ltw_nif] <br />
                             Dirección: C/ Paris nº 45-47, Barcelona (08029) <br />
-                            Teléfono: 657 18 89 97 <br />
+                            Teléfono: 933 220 553 <br />
                             Protección de datos personales
                         </p>
                     </section>
