@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
+import Image from 'next/image';
 
 export function ArticleModal({ article, onClose }: { article: Article; onClose: () => void }) {
     return (
@@ -15,7 +16,7 @@ export function ArticleModal({ article, onClose }: { article: Article; onClose: 
             <Card className="relative w-full max-w-4xl rounded-xl shadow-2xl overflow-hidden">
                 {/* Hero Image Section */}
                 <div className="relative h-80 overflow-hidden">
-                    <img
+                    <Image
                         src={article.image || "/placeholder.svg"}
                         alt={article.title}
                         className="w-full h-full object-cover transition-all duration-300 hover:scale-105"

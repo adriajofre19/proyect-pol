@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function AboutSection() {
   return (
     <section id="sobre-mi" className="py-20 bg-gradient-to-r from-[#f4ece0] to-[#e8e0d4]">
@@ -6,7 +8,7 @@ export function AboutSection() {
           {/* Imagen y Título */}
           <div className="relative -top-10 flex flex-col items-center text-center">
             <div className="relative">
-              <img
+              <Image
                 src="/polarenas.png"
                 alt="Abogado profesional"
                 className="w-[180px] h-auto rounded-full border-4 border-gray-200 shadow-xl transform hover:scale-105 transition duration-300"

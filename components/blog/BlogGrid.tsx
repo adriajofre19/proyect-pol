@@ -5,6 +5,7 @@ import { formatDate } from '@/lib/utils';
 import { ArticleModal } from './ArticleModal';
 import articlesData from '@/data/articles.json';
 import { Article } from '@/types/blog';
+import Image from 'next/image';
 
 export function BlogGrid({ selectedCategory }: { selectedCategory: string | null }) {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
@@ -39,7 +40,7 @@ export function BlogGrid({ selectedCategory }: { selectedCategory: string | null
                 onClick={() => setSelectedArticle(article)}
               >
                 <div className="aspect-w-16 aspect-h-9">
-                  <img
+                  <Image
                     src={article.image}
                     alt={article.title}
                     className="w-full h-48 object-cover"

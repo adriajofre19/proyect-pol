@@ -1,9 +1,11 @@
+import Image from 'next/image';
+
 export function BlogHero() {
   return (
     <section className="relative">
       {/* Hero Image */}
       <div className="absolute inset-0 h-[400px]">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80"
           alt="Blog legal"
           className="w-full h-full object-cover"
