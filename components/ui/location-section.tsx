@@ -32,7 +32,7 @@ export function LocationSection() {
                 <Phone className="h-6 w-6 text-yellow-600 mt-1 mr-4" />
                 <div>
                   <h3 className="font-medium text-gray-900">Teléfono</h3>
-                  <p className="text-gray-600">+34 657 188 297</p>
+                  <p className="text-gray-600">+34 933 220 553</p>
                 </div>
               </div>
 

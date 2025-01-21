@@ -4,12 +4,12 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Imagen y Título */}
-          <div className="relative flex flex-col items-center text-center">
+          <div className="relative -top-10 flex flex-col items-center text-center">
             <div className="relative">
               <img
                 src="/polarenas.png"
                 alt="Abogado profesional"
-                className="w-[180px] h-[180px] rounded-full border-4 border-gray-200 shadow-xl transform hover:scale-105 transition duration-300"
+                className="w-[180px] h-auto rounded-full border-4 border-gray-200 shadow-xl transform hover:scale-105 transition duration-300"
               />
 
             </div>

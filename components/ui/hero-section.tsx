@@ -11,7 +11,7 @@ export function HeroSection() {
 
           <img src='/ley.png' alt="Logo" className="h-16 w-auto mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Arenas i Mora Abogados
+            Arenas Mora & Asociados
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
             Defendiendo sus derechos con experiencia, dedicación y profesionalidad
