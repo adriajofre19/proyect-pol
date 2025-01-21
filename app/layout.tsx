@@ -26,8 +26,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Abogado Autónomo | Asesoramiento Legal Profesional',
-  description: 'Servicios legales personalizados con años de experiencia. Consulta gratuita disponible.',
+  title: 'Arenas Mora & Asociados | Inicio',
+  description: 'Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes.',
 };
 
 export default function RootLayout({
