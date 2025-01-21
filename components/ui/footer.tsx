@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img src="/ley.png" alt="Logo" className="h-8 w-8 mr-2" />
-              <span className="text-xl font-bold">Arenas Mora Abogados</span>
+              <span className="text-xl font-bold">Arenas Mora & Asociados</span>
             </div>
             <p className="text-gray-400">
               Asesoramiento legal profesional y personalizado para proteger sus derechos.
