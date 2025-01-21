@@ -40,7 +40,7 @@ export function BlogGrid({ selectedCategory }: { selectedCategory: string | null
                 onClick={() => setSelectedArticle(article)}
               >
                 <div className="aspect-w-16 aspect-h-9">
-                  <Image
+                  <Image width={400} height={225}
                     src={article.image}
                     alt={article.title}
                     className="w-full h-48 object-cover"

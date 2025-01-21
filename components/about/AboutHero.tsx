@@ -29,7 +29,7 @@ export function AboutHero() {
                         </div>
                     </div>
                     <div className="relative h-[500px]">
-                        <Image
+                        <Image width={500} height={500}
                             src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
                             alt="Despacho de abogados"
                             className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-xl"

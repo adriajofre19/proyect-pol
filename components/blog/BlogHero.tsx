@@ -9,6 +9,8 @@ export function BlogHero() {
           src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80"
           alt="Blog legal"
           className="w-full h-full object-cover"
+          width={2000}
+          height={400}
         />
         <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
       </div>

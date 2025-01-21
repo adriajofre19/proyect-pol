@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="w-full bg-black/75 mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
 
-          <Image src='/ley.png' alt="Logo" className="h-16 w-auto mx-auto mb-6" />
+          <Image src='/ley.png' width={50} height={50} alt="Logo" className="h-16 w-auto mx-auto mb-6" />
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Arenas Mora & Asociados
           </h1>

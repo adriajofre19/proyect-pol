@@ -16,7 +16,7 @@ export function ArticleModal({ article, onClose }: { article: Article; onClose: 
             <Card className="relative w-full max-w-4xl rounded-xl shadow-2xl overflow-hidden">
                 {/* Hero Image Section */}
                 <div className="relative h-80 overflow-hidden">
-                    <Image
+                    <Image width={2000} height={1000}
                         src={article.image || "/placeholder.svg"}
                         alt={article.title}
                         className="w-full h-full object-cover transition-all duration-300 hover:scale-105"

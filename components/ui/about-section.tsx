@@ -11,7 +11,9 @@ export function AboutSection() {
               <Image
                 src="/polarenas.png"
                 alt="Abogado profesional"
-                className="w-[180px] h-auto rounded-full border-4 border-gray-200 shadow-xl transform hover:scale-105 transition duration-300"
+                width={180}
+                height={180}
+                className=" rounded-full border-4 border-gray-200 shadow-xl transform hover:scale-105 transition duration-300"
               />
 
             </div>
