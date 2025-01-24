@@ -16,11 +16,29 @@ export function ContactForm() {
       return;
     }
     setIsSubmitting(true);
-    // Aquí iría la lógica para enviar el formulario
-    setTimeout(() => {
+    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert('Correo enviado exitosamente.');
+      } else {
+        alert('Hubo un error al enviar el correo.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error al enviar el correo.');
+    } finally {
       setIsSubmitting(false);
-      // Mostrar mensaje de éxito
-    }, 1000);
+    }
   };
 
   return (

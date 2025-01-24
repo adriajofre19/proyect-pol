@@ -1,4 +1,7 @@
+'use client';
+
 export function AboutTestimonials() {
+
     const testimonials = [
         {
             text: "El mejor servicio legal que he recibido. Su atención personalizada y profesionalidad son excepcionales.",
