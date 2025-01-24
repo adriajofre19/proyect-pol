@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <div className="relative text-white opacity-80 transition-opacity duration-1000 ease-in-out bg-black opacity" style={{ opacity: 1, backgroundImage: 'url(/slider.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div className="relative text-white opacity-80 transition-opacity duration-1000 ease-in-out bg-black opacity" style={{ opacity: 1, backgroundImage: 'url(/slider.avif)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="w-full bg-black/75 mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
 

@@ -64,6 +64,7 @@ export function LocationSection() {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
+              title="Ubicación de Arenas Mora & Asociados"
             ></iframe>
           </div>
         </div>

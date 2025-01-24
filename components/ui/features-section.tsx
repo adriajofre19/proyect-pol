@@ -31,7 +31,7 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div key={index} className="text-center">
               <feature.icon className="h-12 w-12 mx-auto text-yellow-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <h1 className="text-xl font-semibold mb-2">{feature.title}</h1>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}

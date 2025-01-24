@@ -25,7 +25,7 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image src="/logo.png" width={50} height={50} alt="Logo" className="h-36 w-auto" />
+              <Image src="/logo.avif" width={50} height={50} alt="Logo" className="h-36 w-auto" />
             </Link>
           </div>
 

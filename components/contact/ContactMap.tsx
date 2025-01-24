@@ -8,6 +8,7 @@ export function ContactMap() {
         style={{ border: 0 }}
         allowFullScreen
         loading="lazy"
+        title="Ubicación de Arenas Mora & Asociados"
       ></iframe>
     </div>
   );
