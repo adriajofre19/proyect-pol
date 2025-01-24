@@ -40,10 +40,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={openSans.className}>
-        <Analytics />
-        <SpeedInsights />
         <Navbar />
         {children}
+        <Analytics />
+        <SpeedInsights />
         <Footer />
         <CookieConsent />
       </body>
