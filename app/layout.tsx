@@ -4,6 +4,7 @@ import { Inter, Roboto, Lato, Open_Sans } from 'next/font/google';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/ui/footer';
 import { CookieConsent } from '@/components/CookieConsent';
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'] });
 
