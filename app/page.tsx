@@ -25,6 +25,7 @@ export default function Home() {
         <meta name="twitter:description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
         <meta name="twitter:image" content="https://arenasmorapol.com/logo.png" />
         <link rel="canonical" href="https://arenasmorapol.com" />
+        <link rel="icon" href="../public/logo.avif" />
       </Head>
       <main>
         <HeroSection />

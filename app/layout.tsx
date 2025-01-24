@@ -6,6 +6,7 @@ import { Footer } from '@/components/ui/footer';
 import { CookieConsent } from '@/components/CookieConsent';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -39,6 +40,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <meta name="description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+      <link rel="icon" href="/logo.avif" />
+      <meta name="keywords" content="abogado,abogado barcelona,abogado laboralista,abogado laboral,abogado despidos,abogado divorcios, abogado separaciones,
+        abogado penal, abogado penalista, despacho abogado, consulta jurídica, asesoría laboral, ley de la segunda oportunidad, cancelar deudas, asesoramiento jurídico,
+        barcelona, derecho de familia," />
+      <meta name="author" content="Pol Arenas Mora" />
+      <meta property="og:title" content="Arenas Mora & Asociados | Inicio" />
+      <meta property="og:description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+      <meta property="og:url" content="https://arenasmorapol.com" />
+      <meta property="og:image" content="https://arenasmorapol.com/logo.png" />
+      <meta name="twitter:card" content="https://arenasmorapol.com/logo.png" />
+      <meta name="twitter:title" content="Arenas Mora & Asociados | Inicio" />
+      <meta name="twitter:description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+      <meta name="twitter:image" content="https://arenasmorapol.com/logo.png" />
+      <link rel="canonical" href="https://arenasmorapol.com" />
+
       <body className={openSans.className}>
         <Navbar />
         {children}
