@@ -37,22 +37,17 @@ export const metadata: Metadata = {
     'derecho de familia',
   ],
   authors: [{ name: 'Pol Arenas Mora' }],
-  icons: {
-    icon: '/logo.avif',
-  },
   openGraph: {
     title: 'Arenas Mora & Asociados | Inicio',
     description:
       'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
     url: 'https://arenasmorapol.com',
-    images: ['/logo.avif'],
   },
   twitter: {
     card: 'summary',
     title: 'Arenas Mora & Asociados | Inicio',
     description:
       'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
-    images: ['/logo.avif'],
   },
 };
 
