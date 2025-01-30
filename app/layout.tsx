@@ -14,9 +14,9 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Arenas Mora & Asociados | Inicio',
+  title: 'Abogado en Barcelona | Especialistas en Derecho Laboral',
   description:
-    'Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes.',
+    'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
   keywords: [
     'abogado',
     'abogado barcelona',
