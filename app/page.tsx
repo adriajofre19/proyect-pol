@@ -11,18 +11,18 @@ export default function Home() {
     <>
       <Head>
         <title>Arenas Mora & Asociados | Inicio</title>
-        <meta name="description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+        <meta name="description" content="Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!" />
         <meta name="keywords" content="abogado,abogado barcelona,abogado laboralista,abogado laboral,abogado despidos,abogado divorcios, abogado separaciones,
         abogado penal, abogado penalista, despacho abogado, consulta jurídica, asesoría laboral, ley de la segunda oportunidad, cancelar deudas, asesoramiento jurídico,
         barcelona, derecho de familia," />
         <meta name="author" content="pol arenas mora" />
         <meta property="og:title" content="Arenas Mora & Asociados | Inicio" />
-        <meta property="og:description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+        <meta property="og:description" content="Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!" />
         <meta property="og:url" content="https://arenasmorapol.com" />
         <meta property="og:image" content="https://arenasmorapol.com/logo.png" />
         <meta name="twitter:card" content="https://arenasmorapol.com/logo.png" />
         <meta name="twitter:title" content="Arenas Mora & Asociados | Inicio" />
-        <meta name="twitter:description" content="Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes." />
+        <meta name="twitter:description" content="Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!" />
         <meta name="twitter:image" content="https://arenasmorapol.com/logo.png" />
         <link rel="canonical" href="https://arenasmorapol.com" />
         <link rel="icon" href="../public/logo.avif" />

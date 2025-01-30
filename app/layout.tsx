@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Arenas Mora & Asociados | Inicio',
     description:
-      'Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes.',
+      'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
     url: 'https://arenasmorapol.com',
     images: ['/logo.avif'],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary',
     title: 'Arenas Mora & Asociados | Inicio',
     description:
-      'Despacho de abogados multidisciplinar que ofrece soluciones jurídicas en el ámbito del Derecho, con un óptimo grado de satisfacción de sus clientes.',
+      'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
     images: ['/logo.avif'],
   },
 };
