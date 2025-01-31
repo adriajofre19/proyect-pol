@@ -73,7 +73,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const { data, error } = await resend.emails.send({
     from: `Nueva consulta <onboarding@resend.dev>`,
-    to: ['adria.ordis@gmail.com'],
+    to: ['polarenas@icab.cat'],
     subject: `Nueva consulta: ${subject}`,
     html: emailContent,
   });
