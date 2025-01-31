@@ -6,6 +6,7 @@ import { Footer } from '@/components/ui/footer';
 import { CookieConsent } from '@/components/CookieConsent';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import Script from 'next/script';
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -56,6 +57,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={openSans.variable}>
+      <head>
+        {/* Google Tag */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=AW-11563609495`}
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11563609495');
+            `,
+          }}
+        />
+      </head>
       <body>
         <Navbar />
         {children}
