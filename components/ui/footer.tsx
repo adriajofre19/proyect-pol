@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-xl font-bold">Arenas Mora & Asociados</span>
             </div>
             <p className="text-gray-400">
-              Asesoramiento legal profesional y personalizado para proteger sus derechos.
+              Asesoramiento legal profesional y personalizado para proteger sus derechos Laborales.
             </p>
           </div>
 
@@ -42,10 +42,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">Derecho Civil</li>
               <li className="text-gray-400">Derecho Laboral</li>
-              <li className="text-gray-400">Derecho Mercantil</li>
-              <li className="text-gray-400">Derecho Penal</li>
+              <li className="text-gray-400">Derecho de la Seguridad Social</li>
+              <li className="text-gray-400">Derecho de la Competencia y Consumo</li>
             </ul>
           </div>
 

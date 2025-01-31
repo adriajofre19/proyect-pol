@@ -13,7 +13,6 @@ export function Navbar() {
     { href: '/', label: 'INICIO' },
     { href: '/nosotros', label: 'NOSOTROS' },
     { href: '/servicios', label: 'SERVICIOS' },
-    { href: '/blog', label: 'BLOG' },
   ];
 
   const pathname = usePathname();

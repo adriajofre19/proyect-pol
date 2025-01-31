@@ -15,7 +15,7 @@ export function HeroSection() {
             Arenas Mora & Asociados
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
-            Defendiendo sus derechos con experiencia, dedicación y profesionalidad
+            Defendiendo sus Derechos Laborales con experiencia, dedicación y profesionalidad
           </p>
           <Link
             href="/contacto"

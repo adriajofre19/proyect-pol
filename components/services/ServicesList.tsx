@@ -11,35 +11,13 @@ export function ServicesList() {
   const services = [
     {
       icon: Building2,
-      title: 'Derecho Mercantil',
-      description: 'Asesoramiento integral para empresas, contratos comerciales, fusiones y adquisiciones.',
+      title: 'Derecho de la Seguridad Social',
+      description: 'Reclamaciones de prestaciones cubiertas por la Seguridad Social.',
       features: [
-        'Constitución de sociedades',
-        'Contratos mercantiles',
-        'Fusiones y adquisiciones',
-        'Asesoría empresarial'
-      ]
-    },
-    {
-      icon: Scale,
-      title: 'Derecho Civil',
-      description: 'Resolución de conflictos civiles, contratos, reclamaciones y derecho de propiedad.',
-      features: [
-        'Contratos civiles',
-        'Responsabilidad civil',
-        'Derecho de propiedad',
-        'Reclamaciones'
-      ]
-    },
-    {
-      icon: Briefcase,
-      title: 'Derecho Laboral',
-      description: 'Asesoramiento en relaciones laborales, contratos y conflictos laborales.',
-      features: [
-        'Contratos laborales',
-        'Despidos',
-        'Negociación colectiva',
-        'Seguridad social'
+        'Pensiones de incapacidad',
+        'Jubilaciones',
+        'Prestaciones contributivas y no contributivas',
+        'Reclamaciones contra la Seguridad Social'
       ]
     },
     {
@@ -54,25 +32,14 @@ export function ServicesList() {
       ]
     },
     {
-      icon: Users,
-      title: 'Derecho de Familia',
-      description: 'Asesoramiento en divorcios, custodia y derecho matrimonial.',
-      features: [
-        'Divorcios',
-        'Custodia',
-        'Pensiones',
-        'Herencias'
-      ]
-    },
-    {
       icon: FileText,
-      title: 'Derecho Administrativo',
-      description: 'Representación ante administraciones públicas y recursos administrativos.',
+      title: 'Derecho de Consumidores',
+      description: 'Asesoramiento legal en aras de preservar sus derechos.',
       features: [
-        'Recursos administrativos',
-        'Licencias',
-        'Sanciones',
-        'Contratación pública'
+        'Derecho de consumidores',
+        'Reclamaciones de multas',
+        'Clausulas abusivas',
+        'Condiciones generales de la contratación'
       ]
     }
   ];

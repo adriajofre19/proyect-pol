@@ -38,10 +38,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Pol Arenas Mora' }],
   openGraph: {
-    title: 'Arenas Mora & Asociados | Inicio',
-    description:
-      'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
-    url: 'https://arenasmorapol.com',
+    images: '/logo.png',
   },
   twitter: {
     card: 'summary',
@@ -49,6 +46,7 @@ export const metadata: Metadata = {
     description:
       'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
   },
+  metadataBase: new URL('https://arenasmorapol.com'),
 };
 
 export default function RootLayout({

@@ -10,16 +10,16 @@ export function AboutHero() {
                             Compromiso y resultado
                         </h1>
                         <p className="text-lg text-gray-600 mb-8">
-                            Con varios años de experiencia, Arenas Mora Abogados está especializada en diversas áreas del derecho,
+                            Con amplia experiencia acreditada, Arenas Mora & Asociados está especializada en el campo del Derecho Laboral y de la Seguridad Social,
                             ofreciendo soluciones personalizadas y efectivas en aras de preservar los intereses de sus clientes.
                         </p>
                         <div className="grid grid-cols-3 gap-8">
                             <div>
-                                <h3 className="text-3xl font-bold text-yellow-600">6+</h3>
+                                <h3 className="text-3xl font-bold text-yellow-600">3+</h3>
                                 <p className="text-gray-600">Áreas del Derecho</p>
                             </div>
                             <div>
-                                <h3 className="text-3xl font-bold text-yellow-600">175+</h3>
+                                <h3 className="text-3xl font-bold text-yellow-600">340+</h3>
                                 <p className="text-gray-600">Casos exitosos</p>
                             </div>
                             <div>

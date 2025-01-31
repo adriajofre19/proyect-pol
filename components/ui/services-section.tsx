@@ -5,35 +5,22 @@ import { Scale, Briefcase, FileText, Users, Home, Coins } from 'lucide-react';
 export function ServicesSection() {
   const services = [
     {
-      icon: Scale,
-      title: 'Derecho Civil',
-      description: 'Contratos, responsabilidad civil, derecho de familia y sucesiones.',
-    },
-    {
       icon: Briefcase,
       title: 'Derecho Laboral',
       description: 'Despidos, sanciones ,reclamaciones salariales y conflictos laborales.',
     },
     {
-      icon: FileText,
-      title: 'Derecho Mercantil',
-      description: 'Asesoramiento empresarial, contratos mercantiles y sociedades.',
-    },
-    {
-      icon: Users,
-      title: 'Derecho Penal',
-      description: 'Defensa en procedimientos penales, acusación particular,  delitos económicos y compliance',
-    },
-    {
-      icon: Home,
-      title: 'Derecho Inmobiliario',
-      description: 'Compraventa, arrendamientos y propiedad horizontal.',
+      icon: Scale,
+      title: 'Derecho de la Seguridad Social',
+      description: 'Pensiones de incapacidad, jubilaciones, prestaciones contributivas y no contributivas...',
     },
     {
       icon: Coins,
       title: 'Derecho de la Competencia y Consumo',
       description: 'Derechos de consumidores, cláusulas abusivas y productos financieros.',
     },
+
+
   ];
 
   return (
