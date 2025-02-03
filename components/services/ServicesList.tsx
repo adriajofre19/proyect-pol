@@ -22,7 +22,7 @@ export function ServicesList() {
     },
     {
       icon: Home,
-      title: 'Derecho Inmobiliario',
+      title: 'Derecho Laboral',
       description: 'Gestión de transacciones inmobiliarias y resolución de conflictos.',
       features: [
         'Compraventa',

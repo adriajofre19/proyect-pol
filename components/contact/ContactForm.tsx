@@ -93,12 +93,11 @@ export function ContactForm() {
             className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500"
           >
             <option value="">Seleccione un asunto</option>
-            <option value="civil">Derecho Civil</option>
             <option value="laboral">Derecho Laboral</option>
-            <option value="mercantil">Derecho Mercantil</option>
-            <option value="penal">Derecho Penal</option>
+            <option value="Seguridad Social">Derecho de la Seguridad Social</option>
+            <option value="Consumidores">Derecho de Consumidores</option>
             <option value="inmobiliario">Derecho Inmobiliario</option>
-            <option value="otro">Otro</option>
+            <option value="otros">Otros</option>
           </select>
         </div>
 
