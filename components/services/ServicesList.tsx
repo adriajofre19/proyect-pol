@@ -23,12 +23,12 @@ export function ServicesList() {
     {
       icon: Home,
       title: 'Derecho Laboral',
-      description: 'Gestión de transacciones inmobiliarias y resolución de conflictos.',
+      description: 'Reclamaciones por despido, acoso laboral y demás conflictos derivados del trabajo.',
       features: [
-        'Compraventa',
-        'Arrendamientos',
-        'Hipotecas',
-        'Urbanismo'
+        'Reclamaciones por despido',
+        'Impugnación de sanciones',
+        'Reclamaciones salariales',
+        'Conflictos laborales'
       ]
     },
     {
