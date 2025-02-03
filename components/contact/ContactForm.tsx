@@ -16,23 +16,26 @@ export function ContactForm() {
       return;
     }
     setIsSubmitting(true);
-
     const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('https://hook.eu2.make.com/7fj311jci430jq6l4lvr4nkvfpriu2ti', {
+      const response = await fetch('/api/sendEmail', {
         method: 'POST',
-        body: formData, // Enviar como FormData
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        alert('Datos enviados exitosamente.');
+        alert('Correo enviado exitosamente.');
       } else {
-        alert('Hubo un error al enviar los datos.');
+        alert('Hubo un error al enviar el correo.');
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Error al enviar los datos.');
+      alert('Error al enviar el correo.');
     } finally {
       setIsSubmitting(false);
     }
