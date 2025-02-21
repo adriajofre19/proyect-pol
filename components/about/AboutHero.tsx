@@ -10,8 +10,8 @@ export function AboutHero() {
                             Compromiso y resultado
                         </h1>
                         <p className="text-lg text-gray-600 mb-8">
-                            Con amplia experiencia acreditada, Arenas Mora & Asociados está especializada en el campo del Derecho Laboral y de la Seguridad Social,
-                            ofreciendo soluciones personalizadas y efectivas en aras de preservar los intereses de sus clientes.
+                            Con amplia experiencia acreditada, Arenas Mora & Asociados está especializada en el campo del Derecho Laboral, de la Seguridad Social
+                            y de Extranjería, ofreciendo soluciones personalizadas y efectivas en aras de preservar los intereses de sus clientes.
                         </p>
                         <div className="grid grid-cols-3 gap-8">
                             <div>

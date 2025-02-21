@@ -33,13 +33,13 @@ export function ServicesList() {
     },
     {
       icon: FileText,
-      title: 'Derecho de Consumidores',
-      description: 'Asesoramiento legal en aras de preservar sus derechos.',
+      title: 'Derecho de Extranjería',
+      description: 'Asilo, tramitación de visados, permisos de residencia y arraigo.',
       features: [
-        'Derecho de consumidores',
-        'Reclamaciones de multas',
-        'Clausulas abusivas',
-        'Condiciones generales de la contratación'
+        'Asilo',
+        'Tramitación de visados',
+        'Permisos de residencia',
+        'Arraigo'
       ]
     }
   ];

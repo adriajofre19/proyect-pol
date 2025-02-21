@@ -16,8 +16,8 @@ export function ServicesSection() {
     },
     {
       icon: Coins,
-      title: 'Derecho de la Competencia y Consumo',
-      description: 'Derechos de consumidores, cláusulas abusivas y productos financieros.',
+      title: 'Derecho de Extranjería',
+      description: 'Asilo, tramiotación de visados, permisos de residencia, arraigo...',
     },
 
 

@@ -44,7 +44,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-gray-400">Derecho Laboral</li>
               <li className="text-gray-400">Derecho de la Seguridad Social</li>
-              <li className="text-gray-400">Derecho de la Competencia y Consumo</li>
+              <li className="text-gray-400">Derecho de Extranjería</li>
             </ul>
           </div>
 

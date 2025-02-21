@@ -27,7 +27,7 @@ export function AboutSection() {
               Sobre Mí
             </h2>
             <p className="text-md text-gray-700 leading-relaxed mb-6">
-              Cuento con varios años de experiencia en el campo del Derecho Laboral y de la Seguridad Social; en mi desempeño profesional
+              Cuento con varios años de experiencia en el campo del Derecho Laboral, de la Seguridad Social y de Extranjería; en mi desempeño profesional
               rige el compromiso en ofrecer asesoramiento jurídico de calidad, basado en la excelencia
               y el rigor profesional.
             </p>

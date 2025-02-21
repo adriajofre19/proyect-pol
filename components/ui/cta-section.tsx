@@ -8,18 +8,26 @@ export function CTASection() {
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
           Contacte ahora para una consulta inicial gratuita y descubra cómo podemos ayudarle con su caso.
         </p>
-        <div className="space-x-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
             href="tel:+34933220553"
-            className="inline-block bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
+            className="w-full sm:w-auto bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
           >
             Llamar Ahora
           </a>
           <a
             href="mailto:polarenas@icab.cat"
-            className="inline-block bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors"
+            className="w-full sm:w-auto bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-gray-900 transition-colors"
           >
             Enviar Email
+          </a>
+          <a
+            href="https://wa.me/34933220553"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-400 transition-colors"
+          >
+            Contactar por WhatsApp
           </a>
         </div>
       </div>

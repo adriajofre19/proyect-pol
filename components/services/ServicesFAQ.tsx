@@ -2,7 +2,7 @@ export function ServicesFAQ() {
   const faqs = [
     {
       question: '¿Cuál es el proceso para iniciar mi caso?',
-      answer: 'El proceso comienza con una consulta inicial gratuita donde evaluamos su caso y determinamos la mejor estrategia legal a seguir.'
+      answer: 'El proceso comienza con una consulta inicial donde evaluamos su caso y determinamos la mejor estrategia legal a seguir.'
     },
     {
       question: '¿Cuánto tiempo puede llevar resolver mi caso?',

@@ -95,8 +95,7 @@ export function ContactForm() {
             <option value="">Seleccione un asunto</option>
             <option value="laboral">Derecho Laboral</option>
             <option value="Seguridad Social">Derecho de la Seguridad Social</option>
-            <option value="Consumidores">Derecho de Consumidores</option>
-            <option value="inmobiliario">Derecho Inmobiliario</option>
+            <option value="Extranjeria">Derecho de Extranjería</option>
             <option value="otros">Otros</option>
           </select>
         </div>
