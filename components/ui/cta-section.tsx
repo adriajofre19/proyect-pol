@@ -22,7 +22,7 @@ export function CTASection() {
             Enviar Email
           </a>
           <a
-            href="https://wa.me/34933220553"
+            href="https://wa.me/34654746366"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-green-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-green-400 transition-colors"
