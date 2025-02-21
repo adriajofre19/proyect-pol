@@ -17,7 +17,7 @@ export function ServicesSection() {
     {
       icon: Coins,
       title: 'Derecho de Extranjería',
-      description: 'Asilo, tramiotación de visados, permisos de residencia, arraigo...',
+      description: 'Asilo, tramitación de visados, permisos de residencia, arraigo...',
     },
 
 
