@@ -7,7 +7,7 @@ export function ServicesSection() {
     {
       icon: Briefcase,
       title: 'Derecho Laboral',
-      description: 'Despidos, sanciones ,reclamaciones salariales y conflictos laborales.',
+      description: 'Despidos, sanciones, reclamaciones salariales y conflictos laborales.',
     },
     {
       icon: Scale,
