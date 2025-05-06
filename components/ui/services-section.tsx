@@ -1,8 +1,17 @@
 'use client';
 
-import { Scale, Briefcase, FileText, Users, Home, Coins } from 'lucide-react';
+import {
+  Briefcase,
+  Scale,
+  Globe,
+  HandCoins,
+  Users,
+  FileText,
+} from 'lucide-react';
 
 export function ServicesSection() {
+  
+  
   const services = [
     {
       icon: Briefcase,
@@ -15,12 +24,25 @@ export function ServicesSection() {
       description: 'Pensiones de incapacidad, jubilaciones, prestaciones contributivas y no contributivas...',
     },
     {
-      icon: Coins,
+      icon: Globe,
       title: 'Derecho de Extranjería',
       description: 'Asilo, tramitación de visados, permisos de residencia, arraigo...',
     },
-
-
+    {
+      icon: HandCoins,
+      title: 'Reclamaciones de cantidad',
+      description: 'Recuperamos lo que le corresponde. Asesoramos y representamos a personas y empresas en procedimientos de reclamación de deudas impagadas, tanto extrajudicial como judicialmente.',
+    },
+    {
+      icon: Users,
+      title: 'Derecho de Familia',
+      description: 'Defendemos lo que más importa. Acompañamos a nuestros clientes en procesos familiares con sensibilidad, firmeza y un enfoque jurídico claro y realista.',
+    },
+    {
+      icon: FileText,
+      title: 'Derecho Civil General',
+      description: 'Su tranquilidad jurídica, asegurada. Te asesoramos en cualquier situación que afecte a tu vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
+    },
   ];
 
   return (

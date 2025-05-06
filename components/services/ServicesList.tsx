@@ -4,7 +4,8 @@ import {
   Briefcase,
   Home,
   Users,
-  FileText
+  FileText,
+  User,
 } from 'lucide-react';
 
 export function ServicesList() {
@@ -41,6 +42,48 @@ export function ServicesList() {
         'Permisos de residencia',
         'Arraigo'
       ]
+    },
+    {
+      icon: FileText,
+      title: 'Reclamaciones de cantidad',
+      description: 'Recuperamos lo que le corresponde. Asesoramos y representamos a personas y empresas en procedimientos de reclamación de deudas impagadas, tanto extrajudicial como judicialmente.',
+      features: [
+        'Impagos entre particulares (préstamos verbales, ventas no pagadas, etc.)',
+        'Reclamaciones por incumplimiento contractual',
+        'Juicios verbales y ordinarios por cantidades',
+        'Monitorios y procedimientos ejecutivos',
+        'Reclamación de facturas impagadas a empresas o autónomos',
+        'Reclamaciones a seguros o bancos',
+        'Acciones por vicios ocultos en compraventa (vehículos, inmuebles, etc.)'
+      ]
+    },
+    {
+      icon: Users,
+      title: 'Derecho de familia',
+      description: 'Defendemos lo que más importa. Acompañamos a nuestros clientes en procesos familiares con sensibilidad, firmeza y un enfoque jurídico claro y realista.',
+      features: [
+        'Separaciones y divorcios (de mutuo acuerdo o contenciosos)',
+        'Medidas paternofiliales (custodia, régimen de visitas, pensión)',
+        'Modificación de medidas definitivas',
+        'Ejecución de sentencias por impago de pensión o incumplimiento de visitas',
+        'Guardia y custodia monoparental o compartida',
+        'Parejas de hecho y convenios reguladores',
+        'Incumplimientos de acuerdos y mediación familiar'
+      ]
+    },
+    {
+      icon: User,
+      title: 'Derecho civil general',
+      description: 'Su tranquilidad jurídica, asegurada. Te asesoramos en cualquier situación que afecte a tu vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
+      features: [
+        'Contratos civiles (revisión, redacción y resolución)',
+        'Responsabilidad civil por daños y perjuicios',
+        'Conflictos de arrendamientos urbanos (impagos, desahucios, fianzas)',
+        'Propiedad y comunidad de bienes',
+        'Reclamaciones por defectos de obra',
+        'Reclamaciones por incumplimientos entre particulares',
+        'Derecho de consumidores y usuarios'
+      ]
     }
   ];
 
@@ -62,7 +105,7 @@ export function ServicesList() {
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-gray-600">
-                    <span className="w-1.5 h-1.5 bg-yellow-600 rounded-full mr-2"></span>
+                    <span className="w-1.5 h-1.5 bg-yellow-600 rounded-full mr-2 flex-shrink-0"></span>
                     {feature}
                   </li>
                 ))}
