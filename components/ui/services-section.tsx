@@ -41,7 +41,7 @@ export function ServicesSection() {
     {
       icon: FileText,
       title: 'Derecho Civil General',
-      description: 'Su tranquilidad jurídica, asegurada. Te asesoramos en cualquier situación que afecte a tu vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
+      description: 'Su tranquilidad jurídica, asegurada. Su tranquilidad jurídica, asegurada. Le asesoramos en cualquier situación que afecte a su vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
     },
   ];
 
