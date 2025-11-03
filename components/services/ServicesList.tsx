@@ -74,7 +74,7 @@ export function ServicesList() {
     {
       icon: User,
       title: 'Derecho civil general',
-      description: 'Su tranquilidad jurídica, asegurada. Te asesoramos en cualquier situación que afecte a tu vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
+      description: 'Su tranquilidad jurídica, asegurada. Le asesoramos en cualquier situación que afecte a su vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
       features: [
         'Contratos civiles (revisión, redacción y resolución)',
         'Responsabilidad civil por daños y perjuicios',

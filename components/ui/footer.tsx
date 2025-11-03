@@ -45,6 +45,9 @@ export function Footer() {
               <li className="text-gray-400">Derecho Laboral</li>
               <li className="text-gray-400">Derecho de la Seguridad Social</li>
               <li className="text-gray-400">Derecho de Extranjería</li>
+              <li className="text-gray-400">Reclamaciones de cantidad</li>
+              <li className="text-gray-400">Derecho de Familia</li>
+              <li className="text-gray-400">Derecho Civil General</li>
             </ul>
           </div>
 
