@@ -50,3 +50,27 @@ export async function getBlogArticles(): Promise<Article[]> {
 
   return articles.sort((a, b) => +new Date(b.date) - +new Date(a.date));
 }
+
+export async function getBlogArticleBySlug(
+  slug: string,
+): Promise<Article | null> {
+  const articles = await getBlogArticles();
+  return articles.find((article) => article.slug === slug) ?? null;
+}
+
+export async function getAdjacentBlogArticles(slug: string): Promise<{
+  newer: Article | null;
+  older: Article | null;
+}> {
+  const articles = await getBlogArticles();
+  const index = articles.findIndex((article) => article.slug === slug);
+
+  if (index === -1) {
+    return { newer: null, older: null };
+  }
+
+  return {
+    newer: index > 0 ? articles[index - 1] : null,
+    older: index < articles.length - 1 ? articles[index + 1] : null,
+  };
+}

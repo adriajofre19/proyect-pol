@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X, Cookie, Lock, BarChart, Settings, Target } from "lucide-react";
 import {
   Accordion,
@@ -62,15 +62,18 @@ function getInitialConsentState() {
 }
 
 export function CookieConsent() {
-  const initialState = getInitialConsentState();
-  const [isVisible, setIsVisible] = useState(initialState.isVisible);
+  const [isVisible, setIsVisible] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(
-    initialState.hasInteracted,
-  );
-  const [preferences, setPreferences] = useState<CookiePreferences>(
-    initialState.preferences,
-  );
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const [preferences, setPreferences] =
+    useState<CookiePreferences>(defaultPreferences);
+
+  useEffect(() => {
+    const initialState = getInitialConsentState();
+    setIsVisible(initialState.isVisible);
+    setHasInteracted(initialState.hasInteracted);
+    setPreferences(initialState.preferences);
+  }, []);
 
   const acceptAllCookies = () => {
     const allAccepted = {

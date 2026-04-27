@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
-export function BlogHero() {
+export function BlogHero({ children }: { children?: ReactNode }) {
   return (
     <section className="relative">
       {/* Hero Image */}
@@ -25,6 +26,10 @@ export function BlogHero() {
           </p>
         </div>
       </div>
+
+      {children ? (
+        <div className="absolute inset-x-0 bottom-6 z-20">{children}</div>
+      ) : null}
     </section>
   );
 }

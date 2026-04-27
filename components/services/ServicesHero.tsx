@@ -4,7 +4,7 @@ export function ServicesHero() {
   return (
     <section className="relative">
       {/* Hero Image */}
-      <div className="absolute inset-0 h-[500px]">
+      <div className="absolute inset-0 h-[400px]">
         <Image
           width={2000}
           height={500}
@@ -16,8 +16,8 @@ export function ServicesHero() {
       </div>
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 min-h-[500px] flex items-center">
-        <div className="max-w-3xl">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 min-h-[400px] flex items-center">
+        <div className="text-center mx-auto max-w-3xl">
           <h1 className="text-4xl font-bold text-white mb-6">
             Servicios Legales Especializados
           </h1>

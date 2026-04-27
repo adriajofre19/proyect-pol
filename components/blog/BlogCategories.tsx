@@ -7,17 +7,15 @@ import {
   Briefcase,
   Home,
   FileText,
+  Globe,
 } from "lucide-react";
-import { Article } from "@/types/blog";
 
 export function BlogCategories({
   onCategorySelect,
   activeCategory,
-  articles,
 }: {
   onCategorySelect: (category: string | null) => void;
   activeCategory: string | null;
-  articles: Article[];
 }) {
   const categoryIcons = {
     Civil: Scale,
@@ -26,28 +24,17 @@ export function BlogCategories({
     Laboral: Briefcase,
     Inmobiliario: Home,
     Penal: FileText,
+    Extranjería: Globe,
   };
-
-  // Calculate category counts from articles
-  const categoryCounts = articles.reduce(
-    (acc, article) => {
-      acc[article.category] = (acc[article.category] || 0) + 1;
-      return acc;
-    },
-    {} as Record<string, number>,
-  );
-
-  // Create categories array with counts
   const categories = Object.entries(categoryIcons).map(([name, icon]) => ({
     name,
     icon,
-    count: categoryCounts[name] || 0,
   }));
 
   return (
-    <section className="py-12 bg-[#FFFBF4]">
+    <section className="relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="flex flex-wrap justify-center items-end gap-3">
           {categories.map((category) => (
             <button
               key={category.name}
@@ -56,28 +43,25 @@ export function BlogCategories({
                   activeCategory === category.name ? null : category.name,
                 )
               }
-              className={`flex flex-col items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all ${
+              className={`w-fit flex items-center gap-2 px-3 py-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-all ${
                 activeCategory === category.name ? "ring-2 ring-yellow-600" : ""
               }`}
             >
               <category.icon
-                className={`h-6 w-6 ${
+                className={`h-3.5 w-3.5 shrink-0 ${
                   activeCategory === category.name
                     ? "text-yellow-600"
                     : "text-gray-600"
-                } mb-2`}
+                }`}
               />
               <span
-                className={`font-medium ${
+                className={`text-sm font-medium ${
                   activeCategory === category.name
                     ? "text-yellow-600"
                     : "text-gray-900"
                 }`}
               >
                 {category.name}
-              </span>
-              <span className="text-sm text-gray-500">
-                {category.count} artículos
               </span>
             </button>
           ))}

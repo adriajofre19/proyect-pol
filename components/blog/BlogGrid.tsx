@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { formatDate } from "@/lib/utils";
-import { ArticleModal } from "./ArticleModal";
 import { Article } from "@/types/blog";
 import Image from "next/image";
+import Link from "next/link";
 
 export function BlogGrid({
   selectedCategory,
@@ -13,8 +12,6 @@ export function BlogGrid({
   selectedCategory: string | null;
   articles: Article[];
 }) {
-  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
-
   const filteredArticles = selectedCategory
     ? articles.filter((article) => article.category === selectedCategory)
     : articles;
@@ -34,16 +31,15 @@ export function BlogGrid({
   }
 
   return (
-    <>
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredArticles.map((article) => (
-              <article
-                key={article.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-transform hover:scale-105"
-                onClick={() => setSelectedArticle(article)}
-              >
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredArticles.map((article) => (
+            <article
+              key={article.id}
+              className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105"
+            >
+              <Link href={`/blog/${article.slug}`} className="block">
                 <div className="aspect-w-16 aspect-h-9">
                   <Image
                     width={400}
@@ -71,22 +67,15 @@ export function BlogGrid({
                       {article.readTime} de lectura
                     </span>
                     <span className="text-yellow-600 hover:text-yellow-700 font-medium">
-                      Leer más →
+                      Leer artículo →
                     </span>
                   </div>
                 </div>
-              </article>
-            ))}
-          </div>
+              </Link>
+            </article>
+          ))}
         </div>
-      </section>
-
-      {selectedArticle && (
-        <ArticleModal
-          article={selectedArticle}
-          onClose={() => setSelectedArticle(null)}
-        />
-      )}
-    </>
+      </div>
+    </section>
   );
 }

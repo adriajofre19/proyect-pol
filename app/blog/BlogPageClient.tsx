@@ -11,12 +11,12 @@ export function BlogPageClient({ articles }: { articles: Article[] }) {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <BlogHero />
-      <BlogCategories
-        articles={articles}
-        onCategorySelect={setSelectedCategory}
-        activeCategory={selectedCategory}
-      />
+      <BlogHero>
+        <BlogCategories
+          onCategorySelect={setSelectedCategory}
+          activeCategory={selectedCategory}
+        />
+      </BlogHero>
       <BlogGrid articles={articles} selectedCategory={selectedCategory} />
     </main>
   );

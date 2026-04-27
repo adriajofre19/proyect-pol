@@ -80,3 +80,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .prose input[type="checkbox"] {
+    @apply h-4 w-4 rounded border-gray-300 align-middle accent-yellow-700;
+  }
+}
