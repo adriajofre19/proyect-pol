@@ -1,4 +1,5 @@
 export const SITE_URL = "https://arenasmorapol.com";
+export const SITE_DOMAIN = "arenasmorapol.com";
 export const SITE_NAME = "Arenas Mora & Asociados";
 export const CONTACT_EMAIL = "polarenas@icab.cat";
 export const CONTACT_PHONE = "+34933220553";

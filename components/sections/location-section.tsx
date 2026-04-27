@@ -10,7 +10,7 @@ export function LocationSection() {
             Ubicación del Despacho
           </h2>
           <p className="text-xl text-gray-600">
-            Encuentre nuestro bufete en l'Esquerra de l'Eixample
+            Encuentre nuestro bufete en l&apos;Esquerra de l&apos;Eixample
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 items-center">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SITE_URL } from "@/constants/site";
+import { CONTACT_EMAIL, SITE_DOMAIN, SITE_URL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad | Arenas Mora & Asociados",
@@ -22,8 +22,8 @@ export default function PrivacyPolicyPage() {
               Protección de datos de carácter personal
             </h2>
             <p className="text-gray-600 text-lg mb-4">
-              ARENAS MORA Abogados informa a los usuarios de su página web
-              arenasmorapol.com a través de esta Política de Privacidad sobre el
+              ARENAS MORA Abogados informa a los usuarios de su página web{" "}
+              {SITE_DOMAIN} a través de esta Política de Privacidad sobre el
               tratamiento y protección de los datos de carácter personal de los
               usuarios que puedan ser recabados mediante su navegación o
               contratación de servicios que realicen en este portal. El uso de
@@ -81,7 +81,7 @@ export default function PrivacyPolicyPage() {
               usuario facilite al acceder y utilizar el sitio web, es, en
               calidad de propietario ARENAS MORA Abogados , con domicilio social
               en Calle París nº 45-47, Ent. 3ª, teléfono +34 657 18 89 97 y
-              correo electrónico polarenas@icab.cat ARENAS MORA Abogados se
+              correo electrónico {CONTACT_EMAIL} ARENAS MORA Abogados se
               compromete a aplicar las medidas de seguridad informática
               previstas en la normativa citada previamente, con el objetivo de
               impedir el acceso o uso indebido de los datos, su manipulación,
@@ -130,21 +130,20 @@ export default function PrivacyPolicyPage() {
               transferencia y otras acciones sobre datos de carácter personal,
               tienen la consideración de tratamiento de datos personales. En
               ARENAS MORA Abogados tratamos los datos personales que el usuario
-              nos facilita a través de ARENAS MORA Abogados
-              www.arenasmoraabogados.com con el fin de incluirlos en la agenda
-              de contactos, gestionar la relación comercial solicitada y
-              utilizar así esta información como medio de contacto de dicha
-              empresa. Además, el tratamiento de estos datos recabados también
-              implica gestionar el envío de la información que nos sea
-              solicitada y poder responder a las consultas o cuestiones que el
-              usuario remita a través del sitio web, facilitando a su vez a los
-              interesados las ofertas de servicios que sean de su interés. Los
-              campos de los registros se deben cumplimentar obligatoriamente
-              para que ARENAS MORA Abogados pueda cumplir con las finalidades
-              mencionadas con anterioridad. El usuario puede oponerse al envío
-              de comunicaciones comerciales en cualquier momento mediante el
-              envío de un mensaje de correo electrónico a la dirección indicada
-              supra líneas.
+              nos facilita a través de ARENAS MORA Abogados www.{SITE_DOMAIN}{" "}
+              con el fin de incluirlos en la agenda de contactos, gestionar la
+              relación comercial solicitada y utilizar así esta información como
+              medio de contacto de dicha empresa. Además, el tratamiento de
+              estos datos recabados también implica gestionar el envío de la
+              información que nos sea solicitada y poder responder a las
+              consultas o cuestiones que el usuario remita a través del sitio
+              web, facilitando a su vez a los interesados las ofertas de
+              servicios que sean de su interés. Los campos de los registros se
+              deben cumplimentar obligatoriamente para que ARENAS MORA Abogados
+              pueda cumplir con las finalidades mencionadas con anterioridad. El
+              usuario puede oponerse al envío de comunicaciones comerciales en
+              cualquier momento mediante el envío de un mensaje de correo
+              electrónico a la dirección indicada supra líneas.
             </p>
             <h2 className="text-xl font-semibold text-gray-900 mb-4">
               Legitimación para el tratamiento de datos
@@ -241,11 +240,11 @@ export default function PrivacyPolicyPage() {
               derechos puede realizarlo el propio usuario dirigiéndose a ARENAS
               MORA Abogados en la dirección de su sede social indicada
               anteriormente; a través del envío de un correo electrónico a la
-              siguiente dirección polarenas@icab.cat o a la dirección postal
-              Calle París nº 45-47, Ent. 3ª (C.P. 08029), Barcelona. Para el
-              efectivo ejercicio de estos derechos, el usuario deberá acreditar
-              su identidad facilitando su nombre y apellidos, fotocopia del DNI
-              o documento identificativo equivalente que acredite su identidad,
+              siguiente dirección {CONTACT_EMAIL} o a la dirección postal Calle
+              París nº 45-47, Ent. 3ª (C.P. 08029), Barcelona. Para el efectivo
+              ejercicio de estos derechos, el usuario deberá acreditar su
+              identidad facilitando su nombre y apellidos, fotocopia del DNI o
+              documento identificativo equivalente que acredite su identidad,
               petición en la que se concrete la solicitud, dirección a efectos
               de notificaciones, y fecha y firma del solicitante. Asimismo, el
               usuario podrá reclamar ante la Agencia Española de Protección de
