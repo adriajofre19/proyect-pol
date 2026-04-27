@@ -6,11 +6,12 @@ export function ServicesHero() {
       {/* Hero Image */}
       <div className="absolute inset-0 h-[400px]">
         <Image
-          width={2000}
-          height={500}
           src="/images/sections/legal-office-hero.jpg"
           alt="Servicios legales"
-          className="w-full h-full object-cover"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
       </div>

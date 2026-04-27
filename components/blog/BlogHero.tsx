@@ -9,9 +9,10 @@ export function BlogHero({ children }: { children?: ReactNode }) {
         <Image
           src="/images/sections/blog-hero.jpg"
           alt="Blog legal"
-          className="w-full h-full object-cover"
-          width={2000}
-          height={400}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gray-900 bg-opacity-60"></div>
       </div>

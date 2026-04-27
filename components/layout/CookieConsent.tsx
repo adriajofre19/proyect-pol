@@ -62,6 +62,7 @@ function getInitialConsentState() {
 }
 
 export function CookieConsent() {
+  const [isHydrated, setIsHydrated] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
@@ -73,7 +74,12 @@ export function CookieConsent() {
     setIsVisible(initialState.isVisible);
     setHasInteracted(initialState.hasInteracted);
     setPreferences(initialState.preferences);
+    setIsHydrated(true);
   }, []);
+
+  if (!isHydrated) {
+    return null;
+  }
 
   const acceptAllCookies = () => {
     const allAccepted = {
@@ -270,19 +276,34 @@ export function CookieConsent() {
                           </p>
                         </div>
                         <div className="flex-shrink-0">
-                          <button
+                          <div
+                            role="switch"
+                            aria-checked={
+                              preferences[cookie.id as keyof typeof preferences]
+                            }
+                            aria-disabled={cookie.required}
+                            tabIndex={cookie.required ? -1 : 0}
                             onClick={(e) => {
                               e.stopPropagation();
                               handleToggle(
                                 cookie.id as keyof typeof preferences,
                               );
                             }}
+                            onKeyDown={(e) => {
+                              if (cookie.required) return;
+                              if (e.key === "Enter" || e.key === " ") {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                handleToggle(
+                                  cookie.id as keyof typeof preferences,
+                                );
+                              }
+                            }}
                             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 ${
                               preferences[cookie.id as keyof typeof preferences]
                                 ? "bg-yellow-600"
                                 : "bg-gray-200"
                             } ${cookie.required ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
-                            disabled={cookie.required}
                           >
                             <span
                               className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
@@ -293,7 +314,7 @@ export function CookieConsent() {
                                   : "translate-x-1"
                               }`}
                             />
-                          </button>
+                          </div>
                         </div>
                       </div>
                     </AccordionTrigger>
