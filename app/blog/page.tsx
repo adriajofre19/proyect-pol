@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { BlogPageClient } from "./BlogPageClient";
 import { SITE_URL } from "@/constants/site";
+import { getBlogArticles } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog Jurídico | Arenas Mora & Asociados — Abogados en Barcelona",
@@ -9,6 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/blog` },
 };
 
-export default function BlogPage() {
-  return <BlogPageClient />;
+export default async function BlogPage() {
+  const articles = await getBlogArticles();
+
+  return <BlogPageClient articles={articles} />;
 }

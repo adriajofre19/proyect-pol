@@ -1,18 +1,23 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { formatDate } from '@/lib/utils';
-import { ArticleModal } from './ArticleModal';
-import articlesData from '@/data/articles.json';
-import { Article } from '@/types/blog';
-import Image from 'next/image';
+import { useState } from "react";
+import { formatDate } from "@/lib/utils";
+import { ArticleModal } from "./ArticleModal";
+import { Article } from "@/types/blog";
+import Image from "next/image";
 
-export function BlogGrid({ selectedCategory }: { selectedCategory: string | null }) {
+export function BlogGrid({
+  selectedCategory,
+  articles,
+}: {
+  selectedCategory: string | null;
+  articles: Article[];
+}) {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
   const filteredArticles = selectedCategory
-    ? articlesData.articles.filter(article => article.category === selectedCategory)
-    : articlesData.articles;
+    ? articles.filter((article) => article.category === selectedCategory)
+    : articles;
 
   if (selectedCategory && filteredArticles.length === 0) {
     return (
@@ -40,7 +45,9 @@ export function BlogGrid({ selectedCategory }: { selectedCategory: string | null
                 onClick={() => setSelectedArticle(article)}
               >
                 <div className="aspect-w-16 aspect-h-9">
-                  <Image width={400} height={225}
+                  <Image
+                    width={400}
+                    height={225}
                     src={article.image}
                     alt={article.title}
                     className="w-full h-48 object-cover"
@@ -58,9 +65,7 @@ export function BlogGrid({ selectedCategory }: { selectedCategory: string | null
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">
-                    {article.excerpt}
-                  </p>
+                  <p className="text-gray-600 mb-4">{article.excerpt}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500">
                       {article.readTime} de lectura
