@@ -1,18 +1,19 @@
-'use client';
+"use client";
 
-import { Menu } from 'lucide-react';
-import Link from 'next/link';
-import { useState } from 'react';
-import { usePathname } from 'next/navigation'
-import Image from 'next/image';
+import { Menu } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '/', label: 'INICIO' },
-    { href: '/nosotros', label: 'NOSOTROS' },
-    { href: '/servicios', label: 'SERVICIOS' },
+    { href: "/", label: "INICIO" },
+    { href: "/nosotros", label: "NOSOTROS" },
+    { href: "/servicios", label: "SERVICIOS" },
+    { href: "/blog", label: "BLOG" },
   ];
 
   const pathname = usePathname();
@@ -24,7 +25,13 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
-              <Image src="/logo.avif" width={50} height={50} alt="Logo" className="h-36 w-auto" />
+              <Image
+                src="/logo.avif"
+                width={50}
+                height={50}
+                alt="Logo Arenas Mora Abogados Barcelona"
+                className="h-36 w-auto"
+              />
             </Link>
           </div>
 
@@ -35,14 +42,17 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`hover:text-yellow-400 px-3 py-2 transition-colors 
-                  ${pathname === link.href ? 'text-yellow-500' : 'text-black'}`}
+                  ${pathname === link.href ? "text-yellow-500" : "text-black"}`}
               >
                 {link.label}
               </Link>
             ))}
           </div>
-          <div className='hidden md:flex'>
-            <Link href={'/contacto'} className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors">
+          <div className="hidden md:flex">
+            <Link
+              href={"/contacto"}
+              className="bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
+            >
               CONTACTA CON NOSOTROS
             </Link>
           </div>
@@ -74,9 +84,11 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <Link href={'/contacto'}
+              <Link
+                href={"/contacto"}
                 className="text-gray-700 bg-yellow-500 text-center rounded-lg hover:text-gray-900 px-3 py-2 text-base font-medium tracking-wider"
-                onClick={() => setIsMenuOpen(false)}>
+                onClick={() => setIsMenuOpen(false)}
+              >
                 CONTACTA CON NOSOTROS
               </Link>
             </div>

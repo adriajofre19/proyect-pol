@@ -1,53 +1,69 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter, Roboto, Lato, Open_Sans } from 'next/font/google';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/ui/footer';
-import { CookieConsent } from '@/components/CookieConsent';
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import Script from 'next/script';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Open_Sans } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/ui/footer";
+import { CookieConsent } from "@/components/CookieConsent";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
+import { JsonLdLocalBusiness } from "@/components/JsonLd";
 
 const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-open-sans',
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-open-sans",
 });
 
 export const metadata: Metadata = {
-  title: 'Abogado en Barcelona | Especialistas en Derecho Laboral',
+  title: "Abogado en Barcelona | Especialistas en Derecho Laboral",
   description:
-    'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
+    "Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!",
   keywords: [
-    'abogado',
-    'abogado barcelona',
-    'abogado laboralista',
-    'abogado laboral',
-    'abogado despidos',
-    'abogado divorcios',
-    'abogado separaciones',
-    'abogado penal',
-    'abogado penalista',
-    'despacho abogado',
-    'consulta jurídica',
-    'asesoría laboral',
-    'ley de la segunda oportunidad',
-    'cancelar deudas',
-    'asesoramiento jurídico',
-    'barcelona',
-    'derecho de familia',
+    "abogado",
+    "abogado barcelona",
+    "abogado laboralista",
+    "abogado laboral",
+    "abogado despidos",
+    "abogado divorcios",
+    "abogado separaciones",
+    "abogado penal",
+    "abogado penalista",
+    "despacho abogado",
+    "consulta jurídica",
+    "asesoría laboral",
+    "ley de la segunda oportunidad",
+    "cancelar deudas",
+    "asesoramiento jurídico",
+    "barcelona",
+    "derecho de familia",
   ],
-  authors: [{ name: 'Pol Arenas Mora' }],
+  authors: [{ name: "Pol Arenas Mora" }],
   openGraph: {
-    images: '/logo.png',
+    title: "Abogado en Barcelona | Arenas Mora & Asociados",
+    description:
+      "Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!",
+    type: "website",
+    url: "https://arenasmorapol.com",
+    siteName: "Arenas Mora & Asociados",
+    locale: "es_ES",
+    images: [
+      {
+        url: "/logo.avif",
+        width: 1200,
+        height: 630,
+        alt: "Arenas Mora & Asociados — Abogados en Barcelona",
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Arenas Mora & Asociados | Inicio',
+    card: "summary_large_image",
+    title: "Abogado en Barcelona | Arenas Mora & Asociados",
     description:
-      'Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!',
+      "Buscas un abogado en Barcelona? Ofrecemos asesoramiento jurídico personalizado en derecho laboral. ¡Primera consulta gratuita!",
+    images: ["/logo.avif"],
   },
-  metadataBase: new URL('https://arenasmorapol.com'),
+  metadataBase: new URL("https://arenasmorapol.com"),
 };
 
 export default function RootLayout({
@@ -58,6 +74,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={openSans.variable}>
       <head>
+        <JsonLdLocalBusiness />
         {/* Google Tag */}
         <Script
           strategy="afterInteractive"

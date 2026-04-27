@@ -1,21 +1,13 @@
-'use client';
+import type { Metadata } from "next";
+import { BlogPageClient } from "./BlogPageClient";
 
-import { useState } from 'react';
-import { BlogHero } from '@/components/blog/BlogHero';
-import { BlogGrid } from '@/components/blog/BlogGrid';
-import { BlogCategories } from '@/components/blog/BlogCategories';
+export const metadata: Metadata = {
+  title: "Blog Jurídico | Arenas Mora & Asociados — Abogados en Barcelona",
+  description:
+    "Artículos y noticias sobre derecho laboral, familia, extranjería y más. Mantente informado con el blog jurídico de Arenas Mora & Asociados.",
+  alternates: { canonical: "https://arenasmorapol.com/blog" },
+};
 
 export default function BlogPage() {
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-
-    return (
-        <main className="min-h-screen bg-gray-50">
-            <BlogHero />
-            <BlogCategories
-                onCategorySelect={setSelectedCategory}
-                activeCategory={selectedCategory}
-            />
-            <BlogGrid selectedCategory={selectedCategory} />
-        </main>
-    );
+  return <BlogPageClient />;
 }

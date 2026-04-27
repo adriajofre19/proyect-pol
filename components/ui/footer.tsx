@@ -1,6 +1,6 @@
-import { Scale } from 'lucide-react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { Scale } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -9,11 +9,18 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Image src="/ley.png" width={50} height={50} alt="Logo" className="h-8 w-8 mr-2" />
+              <Image
+                src="/ley.png"
+                width={50}
+                height={50}
+                alt="Logo Arenas Mora Abogados Barcelona"
+                className="h-8 w-8 mr-2"
+              />
               <span className="text-xl font-bold">Arenas Mora & Asociados</span>
             </div>
             <p className="text-gray-400">
-              Asesoramiento legal profesional y personalizado para proteger sus derechos Laborales.
+              Asesoramiento legal profesional y personalizado para proteger sus
+              derechos Laborales.
             </p>
           </div>
 
@@ -21,33 +28,99 @@ export function Footer() {
             <h3 className="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/cookies" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/blog"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contacto"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Contacto
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/cookies"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Politica de cookies
                 </Link>
               </li>
               <li>
-                <Link href="/aviso-legal" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/aviso-legal"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Aviso legal
                 </Link>
               </li>
               <li>
-                <Link href="/politica-privacidad" className="text-gray-400 hover:text-white transition-colors">
+                <Link
+                  href="/politica-privacidad"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Politica de privacidad
                 </Link>
               </li>
-
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">Derecho Laboral</li>
-              <li className="text-gray-400">Derecho de la Seguridad Social</li>
-              <li className="text-gray-400">Derecho de Extranjería</li>
-              <li className="text-gray-400">Reclamaciones de cantidad</li>
-              <li className="text-gray-400">Derecho de Familia</li>
-              <li className="text-gray-400">Derecho Civil General</li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Derecho Laboral
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Derecho de la Seguridad Social
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Derecho de Extranjería
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Reclamaciones de cantidad
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Derecho de Familia
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/servicios"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Derecho Civil General
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -63,7 +136,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Arenas Mora & Asociados. Todos los derechos reservados.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Arenas Mora & Asociados. Todos los
+            derechos reservados.
+          </p>
         </div>
       </div>
     </footer>
