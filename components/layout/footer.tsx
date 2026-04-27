@@ -76,7 +76,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#derecho-laboral"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Derecho Laboral
@@ -84,7 +84,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#derecho-seguridad-social"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Derecho de la Seguridad Social
@@ -92,7 +92,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#derecho-extranjeria"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Derecho de Extranjería
@@ -100,7 +100,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#reclamaciones-cantidad"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Reclamaciones de cantidad
@@ -108,7 +108,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#derecho-familia"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Derecho de Familia
@@ -116,7 +116,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/servicios"
+                  href="/servicios#derecho-civil-general"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Derecho Civil General

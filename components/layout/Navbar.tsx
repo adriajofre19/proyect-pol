@@ -29,6 +29,7 @@ export function Navbar() {
                 src="/images/logo.avif"
                 width={50}
                 height={50}
+                unoptimized
                 alt="Logo Arenas Mora Abogados Barcelona"
                 className="h-36 w-auto"
               />

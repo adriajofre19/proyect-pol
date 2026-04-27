@@ -6,101 +6,122 @@ import {
   Users,
   FileText,
   User,
-} from 'lucide-react';
+} from "lucide-react";
 
 export function ServicesList() {
   const services = [
     {
+      id: "derecho-seguridad-social",
       icon: Building2,
-      title: 'Derecho de la Seguridad Social',
-      description: 'Reclamaciones de prestaciones cubiertas por la Seguridad Social.',
+      title: "Derecho de la Seguridad Social",
+      description:
+        "Reclamaciones de prestaciones cubiertas por la Seguridad Social.",
       features: [
-        'Pensiones de incapacidad',
-        'Jubilaciones',
-        'Prestaciones contributivas y no contributivas',
-        'Reclamaciones contra la Seguridad Social'
-      ]
+        "Pensiones de incapacidad",
+        "Jubilaciones",
+        "Prestaciones contributivas y no contributivas",
+        "Reclamaciones contra la Seguridad Social",
+      ],
     },
     {
+      id: "derecho-laboral",
       icon: Home,
-      title: 'Derecho Laboral',
-      description: 'Reclamaciones por despido, acoso laboral y demás conflictos derivados del trabajo.',
+      title: "Derecho Laboral",
+      description:
+        "Reclamaciones por despido, acoso laboral y demás conflictos derivados del trabajo.",
       features: [
-        'Reclamaciones por despido',
-        'Impugnación de sanciones',
-        'Reclamaciones salariales',
-        'Conflictos laborales'
-      ]
+        "Reclamaciones por despido",
+        "Impugnación de sanciones",
+        "Reclamaciones salariales",
+        "Conflictos laborales",
+      ],
     },
     {
+      id: "derecho-extranjeria",
       icon: FileText,
-      title: 'Derecho de Extranjería',
-      description: 'Asilo, tramitación de visados, permisos de residencia y arraigo.',
+      title: "Derecho de Extranjería",
+      description:
+        "Asilo, tramitación de visados, permisos de residencia y arraigo.",
       features: [
-        'Asilo',
-        'Tramitación de visados',
-        'Permisos de residencia',
-        'Arraigo'
-      ]
+        "Asilo",
+        "Tramitación de visados",
+        "Permisos de residencia",
+        "Arraigo",
+      ],
     },
     {
+      id: "reclamaciones-cantidad",
       icon: FileText,
-      title: 'Reclamaciones de cantidad',
-      description: 'Recuperamos lo que le corresponde. Asesoramos y representamos a personas y empresas en procedimientos de reclamación de deudas impagadas, tanto extrajudicial como judicialmente.',
+      title: "Reclamaciones de cantidad",
+      description:
+        "Recuperamos lo que le corresponde. Asesoramos y representamos a personas y empresas en procedimientos de reclamación de deudas impagadas, tanto extrajudicial como judicialmente.",
       features: [
-        'Impagos entre particulares (préstamos verbales, ventas no pagadas, etc.)',
-        'Reclamaciones por incumplimiento contractual',
-        'Juicios verbales y ordinarios por cantidades',
-        'Monitorios y procedimientos ejecutivos',
-        'Reclamación de facturas impagadas a empresas o autónomos',
-        'Reclamaciones a seguros o bancos',
-        'Acciones por vicios ocultos en compraventa (vehículos, inmuebles, etc.)'
-      ]
+        "Impagos entre particulares (préstamos verbales, ventas no pagadas, etc.)",
+        "Reclamaciones por incumplimiento contractual",
+        "Juicios verbales y ordinarios por cantidades",
+        "Monitorios y procedimientos ejecutivos",
+        "Reclamación de facturas impagadas a empresas o autónomos",
+        "Reclamaciones a seguros o bancos",
+        "Acciones por vicios ocultos en compraventa (vehículos, inmuebles, etc.)",
+      ],
     },
     {
+      id: "derecho-familia",
       icon: Users,
-      title: 'Derecho de familia',
-      description: 'Defendemos lo que más importa. Acompañamos a nuestros clientes en procesos familiares con sensibilidad, firmeza y un enfoque jurídico claro y realista.',
+      title: "Derecho de familia",
+      description:
+        "Defendemos lo que más importa. Acompañamos a nuestros clientes en procesos familiares con sensibilidad, firmeza y un enfoque jurídico claro y realista.",
       features: [
-        'Separaciones y divorcios (de mutuo acuerdo o contenciosos)',
-        'Medidas paternofiliales (custodia, régimen de visitas, pensión)',
-        'Modificación de medidas definitivas',
-        'Ejecución de sentencias por impago de pensión o incumplimiento de visitas',
-        'Guardia y custodia monoparental o compartida',
-        'Parejas de hecho y convenios reguladores',
-        'Incumplimientos de acuerdos y mediación familiar'
-      ]
+        "Separaciones y divorcios (de mutuo acuerdo o contenciosos)",
+        "Medidas paternofiliales (custodia, régimen de visitas, pensión)",
+        "Modificación de medidas definitivas",
+        "Ejecución de sentencias por impago de pensión o incumplimiento de visitas",
+        "Guardia y custodia monoparental o compartida",
+        "Parejas de hecho y convenios reguladores",
+        "Incumplimientos de acuerdos y mediación familiar",
+      ],
     },
     {
+      id: "derecho-civil-general",
       icon: User,
-      title: 'Derecho civil general',
-      description: 'Su tranquilidad jurídica, asegurada. Le asesoramos en cualquier situación que afecte a su vida personal o patrimonial, con soluciones claras y estrategias eficaces.',
+      title: "Derecho civil general",
+      description:
+        "Su tranquilidad jurídica, asegurada. Le asesoramos en cualquier situación que afecte a su vida personal o patrimonial, con soluciones claras y estrategias eficaces.",
       features: [
-        'Contratos civiles (revisión, redacción y resolución)',
-        'Responsabilidad civil por daños y perjuicios',
-        'Conflictos de arrendamientos urbanos (impagos, desahucios, fianzas)',
-        'Propiedad y comunidad de bienes',
-        'Reclamaciones por defectos de obra',
-        'Reclamaciones por incumplimientos entre particulares',
-        'Derecho de consumidores y usuarios'
-      ]
-    }
+        "Contratos civiles (revisión, redacción y resolución)",
+        "Responsabilidad civil por daños y perjuicios",
+        "Conflictos de arrendamientos urbanos (impagos, desahucios, fianzas)",
+        "Propiedad y comunidad de bienes",
+        "Reclamaciones por defectos de obra",
+        "Reclamaciones por incumplimientos entre particulares",
+        "Derecho de consumidores y usuarios",
+      ],
+    },
   ];
 
   return (
     <section className="py-20 bg-[#FFFBF4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Nuestras Áreas de Práctica</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Nuestras Áreas de Práctica
+          </h2>
           <p className="text-lg text-gray-600">
             Experiencia legal en las áreas más demandadas
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+            <div
+              key={index}
+              id={service.id}
+              tabIndex={-1}
+              className="bg-white p-6 rounded-lg shadow-md scroll-mt-28 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-600"
+            >
               <service.icon className="h-12 w-12 text-yellow-600 mb-4" />
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{service.title}</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                {service.title}
+              </h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (

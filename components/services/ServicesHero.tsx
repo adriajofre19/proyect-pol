@@ -1,12 +1,14 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export function ServicesHero() {
   return (
     <section className="relative">
       {/* Hero Image */}
       <div className="absolute inset-0 h-[500px]">
-        <Image width={2000} height={500}
-          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80"
+        <Image
+          width={2000}
+          height={500}
+          src="/images/sections/legal-office-hero.jpg"
           alt="Servicios legales"
           className="w-full h-full object-cover"
         />
@@ -20,8 +22,9 @@ export function ServicesHero() {
             Servicios Legales Especializados
           </h1>
           <p className="text-xl text-gray-100">
-            Ofrecemos asesoramiento legal integral con un enfoque personalizado para cada cliente.
-            Nuestro compromiso es encontrar las mejores soluciones para sus necesidades legales.
+            Ofrecemos asesoramiento legal integral con un enfoque personalizado
+            para cada cliente. Nuestro compromiso es encontrar las mejores
+            soluciones para sus necesidades legales.
           </p>
         </div>
       </div>

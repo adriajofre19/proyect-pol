@@ -3,6 +3,7 @@ import { ServicesHero } from "@/components/services/ServicesHero";
 import { ServicesList } from "@/components/services/ServicesList";
 import { ServicesProcess } from "@/components/services/ServicesProcess";
 import { ServicesFAQ } from "@/components/services/ServicesFAQ";
+import { ServicesHashFocus } from "@/components/services/ServicesHashFocus";
 import { JsonLdFAQ } from "@/components/layout/JsonLd";
 import { SITE_URL } from "@/constants/site";
 
@@ -17,6 +18,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       <JsonLdFAQ />
+      <ServicesHashFocus />
       <ServicesHero />
       <ServicesList />
       <ServicesProcess />

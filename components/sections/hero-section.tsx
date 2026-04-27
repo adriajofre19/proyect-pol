@@ -12,6 +12,7 @@ export function HeroSection() {
         alt=""
         fill
         priority
+        unoptimized
         className="object-cover object-center"
         aria-hidden="true"
       />

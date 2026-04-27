@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export function BlogHero() {
   return (
@@ -6,7 +6,7 @@ export function BlogHero() {
       {/* Hero Image */}
       <div className="absolute inset-0 h-[400px]">
         <Image
-          src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80"
+          src="/images/sections/blog-hero.jpg"
           alt="Blog legal"
           className="w-full h-full object-cover"
           width={2000}
@@ -20,8 +20,8 @@ export function BlogHero() {
         <div className="text-center mx-auto max-w-3xl">
           <h1 className="text-4xl font-bold text-white mb-6">Blog Legal</h1>
           <p className="text-xl text-gray-100">
-            Artículos, noticias y actualizaciones sobre el mundo legal.
-            Mantente informado sobre las últimas novedades jurídicas.
+            Artículos, noticias y actualizaciones sobre el mundo legal. Mantente
+            informado sobre las últimas novedades jurídicas.
           </p>
         </div>
       </div>
