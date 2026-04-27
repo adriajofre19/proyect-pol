@@ -8,7 +8,7 @@ export function HeroSection() {
     <div className="relative text-white">
       {/* Hero background image con priority para LCP */}
       <Image
-        src="/slider.avif"
+        src="/images/slider.avif"
         alt=""
         fill
         priority
@@ -18,7 +18,7 @@ export function HeroSection() {
       <div className="relative z-10 w-full bg-black/75 mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
           <Image
-            src="/ley.png"
+            src="/images/ley.png"
             width={50}
             height={50}
             alt="Arenas Mora Abogados Barcelona"
@@ -51,7 +51,7 @@ export function HeroSection() {
                 También puedes contactarnos por WhatsApp
               </span>
               <Image
-                src="/whatssap.webp"
+                src="/images/whatssap.webp"
                 alt="WhatsApp"
                 width={48}
                 height={48}

@@ -1,6 +1,7 @@
 import { Scale } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/constants/site";
 
 export function Footer() {
   return (
@@ -10,7 +11,7 @@ export function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <Image
-                src="/ley.png"
+                src="/images/ley.png"
                 width={50}
                 height={50}
                 alt="Logo Arenas Mora Abogados Barcelona"
@@ -129,8 +130,8 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>Carrer de París, 45-47</li>
               <li>08029 Eixample, Barcelona</li>
-              <li>+34 933 220 553</li>
-              <li>polarenas@icab.cat</li>
+              <li>{CONTACT_PHONE_DISPLAY}</li>
+              <li>{CONTACT_EMAIL}</li>
             </ul>
           </div>
         </div>

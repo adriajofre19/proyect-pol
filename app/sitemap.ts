@@ -1,33 +1,34 @@
 import { MetadataRoute } from "next";
+import { SITE_URL } from "@/constants/site";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: "https://arenasmorapol.com",
+      url: SITE_URL,
       lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://arenasmorapol.com/servicios",
+      url: `${SITE_URL}/servicios`,
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://arenasmorapol.com/nosotros",
+      url: `${SITE_URL}/nosotros`,
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://arenasmorapol.com/contacto",
+      url: `${SITE_URL}/contacto`,
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://arenasmorapol.com/blog",
+      url: `${SITE_URL}/blog`,
       lastModified: new Date().toISOString(),
       changeFrequency: "weekly",
       priority: 0.7,

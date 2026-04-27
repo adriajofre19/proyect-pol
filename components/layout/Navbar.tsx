@@ -26,7 +26,7 @@ export function Navbar() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.avif"
+                src="/images/logo.avif"
                 width={50}
                 height={50}
                 alt="Logo Arenas Mora Abogados Barcelona"

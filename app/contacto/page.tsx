@@ -3,12 +3,13 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { ContactInfo } from "@/components/contact/ContactInfo";
 import { ContactMap } from "@/components/contact/ContactMap";
 import { ContactHero } from "@/components/contact/ContactHero";
+import { SITE_URL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Contacto | Arenas Mora & Asociados — Abogados en Barcelona",
   description:
     "Contáctanos para una primera consulta gratuita. Despacho en Carrer de París 45-47, Eixample, Barcelona. Tel. +34 933 220 553.",
-  alternates: { canonical: "https://arenasmorapol.com/contacto" },
+  alternates: { canonical: `${SITE_URL}/contacto` },
 };
 
 export default function ContactPage() {

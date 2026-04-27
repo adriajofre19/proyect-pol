@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Send } from 'lucide-react';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
-import Link from 'next/link';
+import { useState } from "react";
+import { Send } from "lucide-react";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
+import Link from "next/link";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -20,22 +20,22 @@ export function ContactForm() {
     const data = Object.fromEntries(formData);
 
     try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
+      const response = await fetch("/api/send-email", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        alert('Correo enviado exitosamente.');
+        alert("Correo enviado exitosamente.");
       } else {
-        alert('Hubo un error al enviar el correo.');
+        alert("Hubo un error al enviar el correo.");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error al enviar el correo.');
+      console.error("Error:", error);
+      alert("Error al enviar el correo.");
     } finally {
       setIsSubmitting(false);
     }
@@ -45,7 +45,10 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
       <div className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700"
+          >
             Nombre completo
           </label>
           <Input
@@ -58,7 +61,10 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-700"
+          >
             Correo electrónico
           </label>
           <Input
@@ -71,7 +77,10 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="phone"
+            className="block text-sm font-medium text-gray-700"
+          >
             Teléfono
           </label>
           <Input
@@ -83,7 +92,10 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="subject"
+            className="block text-sm font-medium text-gray-700"
+          >
             Asunto
           </label>
           <select
@@ -94,7 +106,9 @@ export function ContactForm() {
           >
             <option value="">Seleccione un asunto</option>
             <option value="laboral">Derecho Laboral</option>
-            <option value="Seguridad Social">Derecho de la Seguridad Social</option>
+            <option value="Seguridad Social">
+              Derecho de la Seguridad Social
+            </option>
             <option value="Extranjeria">Derecho de Extranjería</option>
             <option value="civil">Derecho Civil</option>
             <option value="otros">Otros</option>
@@ -102,7 +116,10 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700"
+          >
             Consulta
           </label>
           <Textarea
@@ -128,8 +145,11 @@ export function ContactForm() {
           </div>
           <div className="ml-3">
             <label htmlFor="privacy" className="text-sm text-gray-600">
-              He leído y acepto la{' '}
-              <Link href="/politica-privacidad" className="text-yellow-600 hover:text-yellow-700 font-medium">
+              He leído y acepto la{" "}
+              <Link
+                href="/politica-privacidad"
+                className="text-yellow-600 hover:text-yellow-700 font-medium"
+              >
                 Política de Privacidad
               </Link>
             </label>
@@ -142,7 +162,7 @@ export function ContactForm() {
           className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {isSubmitting ? (
-            'Enviando...'
+            "Enviando..."
           ) : (
             <>
               Enviar mensaje

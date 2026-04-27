@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://arenasmorapol.com
-
-# Sitemaps
-Sitemap: https://arenasmorapol.com/sitemap.xml

@@ -1,15 +1,22 @@
+import {
+  SITE_URL,
+  SITE_NAME,
+  CONTACT_EMAIL,
+  CONTACT_PHONE,
+} from "@/constants/site";
+
 export function JsonLdLocalBusiness() {
   const schema = {
     "@context": "https://schema.org",
     "@type": ["LegalService", "LocalBusiness"],
-    name: "Arenas Mora & Asociados",
-    url: "https://arenasmorapol.com",
-    logo: "https://arenasmorapol.com/logo.avif",
-    image: "https://arenasmorapol.com/logo.avif",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/logo.avif`,
+    image: `${SITE_URL}/images/logo.avif`,
     description:
       "Despacho de abogados en Barcelona especializado en derecho laboral, seguridad social, extranjería, derecho de familia y civil.",
-    telephone: "+34933220553",
-    email: "polarenas@icab.cat",
+    telephone: CONTACT_PHONE,
+    email: CONTACT_EMAIL,
     address: {
       "@type": "PostalAddress",
       streetAddress: "Carrer de París, 45-47",
@@ -38,7 +45,7 @@ export function JsonLdLocalBusiness() {
     priceRange: "$$",
     hasMap:
       "https://maps.google.com/?q=Carrer+de+París,+45-47,+08029+Barcelona",
-    sameAs: ["https://arenasmorapol.com"],
+    sameAs: [SITE_URL],
   };
 
   return (
@@ -57,13 +64,13 @@ export function JsonLdPerson() {
     jobTitle: "Abogado",
     description:
       "Abogado colegiado nº 48.421 ICAB, especialista en derecho laboral en Barcelona.",
-    url: "https://arenasmorapol.com/nosotros",
-    email: "polarenas@icab.cat",
-    telephone: "+34933220553",
+    url: `${SITE_URL}/nosotros`,
+    email: CONTACT_EMAIL,
+    telephone: CONTACT_PHONE,
     worksFor: {
       "@type": "LegalService",
-      name: "Arenas Mora & Asociados",
-      url: "https://arenasmorapol.com",
+      name: SITE_NAME,
+      url: SITE_URL,
     },
     address: {
       "@type": "PostalAddress",

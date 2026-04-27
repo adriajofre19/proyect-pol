@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Política de Privacidad | Arenas Mora & Asociados",
   description:
     "Política de privacidad y protección de datos de Arenas Mora & Asociados. RGPD y LOPDGDD.",
-  alternates: { canonical: "https://arenasmorapol.com/politica-privacidad" },
+  alternates: { canonical: `${SITE_URL}/politica-privacidad` },
 };
 
 export default function PrivacyPolicyPage() {

@@ -12,7 +12,7 @@ export function AboutSection() {
           <div className="relative -top-10 flex flex-col items-center text-center">
             <div className="relative">
               <Image
-                src="/polarenas.png"
+                src="/images/polarenas.png"
                 alt="Abogado profesional"
                 width={180}
                 height={180}

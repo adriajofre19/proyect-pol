@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Política de Cookies | Arenas Mora & Asociados",
   description:
     "Información sobre el uso de cookies en la web de Arenas Mora & Asociados. Tipos de cookies, finalidad y cómo gestionarlas.",
-  alternates: { canonical: "https://arenasmorapol.com/cookies" },
+  alternates: { canonical: `${SITE_URL}/cookies` },
 };
 
 export default function CookiesPage() {

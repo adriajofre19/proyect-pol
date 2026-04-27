@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Aviso Legal | Arenas Mora & Asociados",
   description:
     "Aviso legal del despacho de abogados Arenas Mora & Asociados. Información sobre el titular y condiciones de uso del sitio web.",
-  alternates: { canonical: "https://arenasmorapol.com/aviso-legal" },
+  alternates: { canonical: `${SITE_URL}/aviso-legal` },
 };
 
 export default function AvisoLegalPage() {
