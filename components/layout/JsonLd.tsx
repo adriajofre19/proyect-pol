@@ -1,5 +1,6 @@
 import {
   SITE_URL,
+  SITE_PREVIEW_URL,
   SITE_NAME,
   CONTACT_EMAIL,
   CONTACT_PHONE,
@@ -45,7 +46,7 @@ export function JsonLdLocalBusiness() {
     priceRange: "$$",
     hasMap:
       "https://maps.google.com/?q=Carrer+de+París,+45-47,+08029+Barcelona",
-    sameAs: [SITE_URL],
+    sameAs: [SITE_URL, SITE_PREVIEW_URL],
   };
 
   return (

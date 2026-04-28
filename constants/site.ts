@@ -1,5 +1,7 @@
-export const SITE_URL = "https://arenasmorapol.com";
+export const SITE_URL = "https://www.arenasmorapol.com";
 export const SITE_DOMAIN = "arenasmorapol.com";
+export const SITE_PREVIEW_URL = "https://arenasmorapol.albertoinformatico.com";
+export const SITE_CONFIGURED_URLS = [SITE_URL, SITE_PREVIEW_URL] as const;
 export const SITE_NAME = "Arenas Mora & Asociados";
 export const CONTACT_EMAIL = "polarenas@icab.cat";
 export const CONTACT_PHONE = "+34933220553";
