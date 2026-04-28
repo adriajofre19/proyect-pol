@@ -5,6 +5,7 @@ import { Send } from "lucide-react";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import Link from "next/link";
+import { toast } from "@/hooks/use-toast";
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -13,9 +14,16 @@ export function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!acceptPrivacy) {
+      toast({
+        title: "Falta aceptar la política de privacidad",
+        description:
+          "Debes aceptar la política de privacidad antes de enviar la consulta.",
+      });
       return;
     }
+
     setIsSubmitting(true);
+    const form = e.currentTarget;
     const formData = new FormData(e.currentTarget);
     const data = Object.fromEntries(formData);
 
@@ -28,14 +36,36 @@ export function ContactForm() {
         body: JSON.stringify(data),
       });
 
+      const payload = await response
+        .json()
+        .catch(() => ({
+          error: "No se pudo interpretar la respuesta del servidor.",
+        }));
+
       if (response.ok) {
-        alert("Correo enviado exitosamente.");
+        form.reset();
+        setAcceptPrivacy(false);
+        toast({
+          title: "Consulta enviada",
+          description:
+            "Hemos recibido tu mensaje correctamente. Te responderemos lo antes posible.",
+        });
       } else {
-        alert("Hubo un error al enviar el correo.");
+        toast({
+          title: "No se pudo enviar la consulta",
+          description:
+            payload?.error || "Ha ocurrido un error al enviar el mensaje.",
+          variant: "destructive",
+        });
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("Error al enviar el correo.");
+      toast({
+        title: "Error de conexión",
+        description:
+          "No hemos podido contactar con el servidor. Inténtalo de nuevo en unos minutos.",
+        variant: "destructive",
+      });
     } finally {
       setIsSubmitting(false);
     }

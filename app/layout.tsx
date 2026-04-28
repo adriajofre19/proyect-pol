@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 import { JsonLdLocalBusiness } from "@/components/layout/JsonLd";
+import { Toaster } from "@/components/ui/toaster";
 import { SITE_URL, SITE_NAME } from "@/constants/site";
 
 const openSans = Open_Sans({
@@ -98,6 +99,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Toaster />
         <CookieConsent />
         <Analytics />
         <SpeedInsights />
